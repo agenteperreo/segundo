@@ -185,3 +185,27 @@ begin
 end
 
 exec MostrarMejoresVendedores
+
+--Ejercicio 10
+--Realiza un procedimiento RecortarSueldos que recorte el   sueldo un 20% a los empleados cuyo nombre empiece por la  letra que recibe como parámetro.Trata las excepciones  que consideres necesarias
+
+create or alter procedure RecortarSueldos @letra varchar(1)
+as
+begin
+
+	select ename, sal from emp where ename like @letra+'%'
+
+	update EMP
+	set SAL = SAL - (SAL*20/100)
+	where ENAME like @letra+'%'
+
+	select ENAME, SAL from EMP where ENAME like '%'
+end
+
+begin tran t1
+
+exec RecortarSueldos 'A'
+
+rollback
+
+select * from 

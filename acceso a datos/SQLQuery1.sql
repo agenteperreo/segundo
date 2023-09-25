@@ -1,7 +1,7 @@
 ﻿-- Creamos y damos privilegios a SCOTT, cuya contrase�a es TIGER y finalmente nos conectamos con SCOTT/TIGER
---DROP DATABASE SCOTT 
+--DROP DATABASE SCOTT  USE SCOTT
  CREATE DATABASE SCOTT
- USE SCOTT
+
  
 -- Creaci�n de las tablas de SCOTT
  
