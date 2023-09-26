@@ -4,6 +4,11 @@
     End Sub
 
     Private Sub btnSaludar_Click(sender As Object, e As EventArgs) Handles btnSaludar.Click
-        MessageBox.Show("psjhbns", "saludo")
+
+        Dim nombre As String
+
+        nombre = txtNombre.
+
+        MessageBox.Show("Hola", "saludo")
     End Sub
 End Class
