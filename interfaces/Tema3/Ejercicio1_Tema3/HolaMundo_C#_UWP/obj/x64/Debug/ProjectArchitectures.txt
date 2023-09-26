@@ -1,0 +1,1 @@
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\HolaMundo_C#_UWP\HolaMundo_Csharp_UWP.csproj;x64
