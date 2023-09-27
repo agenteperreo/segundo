@@ -202,10 +202,45 @@ end
 exec MostrarMasAntiguos
 
 --Ejercicio 7
---Realiza un procedimiento MostrarJefes que reciba el nombre de un departamento y muestre los nombres de los empleados de ese departamento que son jefes de otros empleados.Trata las excepciones que consideres necesarias.
+--Realiza un procedimiento MostrarJefes que reciba el nombre de un departamento y muestre los nombres de los empleados de ese departamento que son jefes de otros empleados.Trata las excepciones que consideres necesaria
 
+create or alter procedure MostrarJefes @nombreDept varchar(14)
+as
+begin
 
+	declare @codDept int
 
+	set @codDept = dbo.DevolverCodDept(@nombreDept)
+
+	declare @nomEmp varchar(10)
+	declare @numEmp int
+
+	declare CursorEmpleados cursor for select ename, EMPNO from EMP
+
+	open CursorEmpleados
+
+	fetch CursorEmpleados into @nomEmp, @numEmp
+
+	while(@@FETCH_STATUS = 0)
+	begin
+
+		select distinct Jefe.ename, Jefe.EMPNO from EMP as E
+		inner join emp as Jefe on E.MGR=Jefe.EMPNO
+		where E.DEPTNO=@codDept		
+
+		print @nomEmp+':'+CAST(@numEmp as varchar(5))+' del departamento '+CAST(@codDept as varchar(5))
+
+		fetch CursorEmpleados into @nomEmp, @numEmp
+
+	end
+
+	close CursorEmpleados
+
+	deallocate CursorEmpleados
+
+end
+
+exec MostrarJefes 'RESEARCH'
 
 --Ejercicio 8
 --Realiza un procedimiento MostrarMejoresVendedores que muestre los nombres de los dos vendedores con más comisiones. Trata las excepciones que consideres necesarias.
