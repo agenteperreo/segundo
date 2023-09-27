@@ -170,7 +170,41 @@ exec MostrarAbreviaturas
 create or alter procedure MostrarMasAntiguos
 as
 begin
+
+	declare @nomEm varchar(10)
+	declare @nomDep varchar(14)
+	declare @fecha date
+
+	declare Departamentos cursor for select DNAME from DEPT
+
+	open Departamentos
+
+	fetch Departamentos into @nomDep
+
+	while(@@FETCH_STATUS = 0)
+	begin
+		
+		set @fecha = (select MIN(hiredate) as FechaCont from emp inner join dept on dept.DEPTNO= EMP.DEPTNO where DNAME=@nomDep)
+
+		set @nomEm = (select ename from EMP where HIREDATE = @fecha)
+
+		print @nomEm+' : '+@nomDep
+
+		fetch Departamentos into @nomDep
+
+	end
+
+	close Departamentos
+
+	deallocate Departamentos
 end
+
+exec MostrarMasAntiguos
+
+--Ejercicio 7
+--Realiza un procedimiento MostrarJefes que reciba el nombre de un departamento y muestre los nombres de los empleados de ese departamento que son jefes de otros empleados.Trata las excepciones que consideres necesarias.
+
+
 
 
 --Ejercicio 8
@@ -199,7 +233,7 @@ begin
 	set SAL = SAL - (SAL*20/100)
 	where ENAME like @letra+'%'
 
-	select ENAME, SAL from EMP where ENAME like '%'
+	select ENAME, SAL from EMP where ENAME like @letra+'%'
 end
 
 begin tran t1
@@ -208,4 +242,5 @@ exec RecortarSueldos 'A'
 
 rollback
 
-select * from 
+--Ejercicio 11
+--Realiza un procedimiento BorrarBecarios que borre a los dos empleados más nuevos de cada departamento. Trata las excepciones que consideres necesarias.
