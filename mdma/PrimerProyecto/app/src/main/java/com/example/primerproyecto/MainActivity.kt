@@ -8,7 +8,7 @@ import kotlin.math.pow
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
         Log.d(":::Tag", Elevado(3, 3))
     }
