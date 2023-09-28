@@ -7,7 +7,7 @@
 
         Dim nombre As String
 
-        nombre = txtNombre.
+        nombre = txtNombre.  
 
         MessageBox.Show("Hola", "saludo")
     End Sub
