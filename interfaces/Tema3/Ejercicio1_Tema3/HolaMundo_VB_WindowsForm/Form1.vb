@@ -7,8 +7,9 @@
 
         Dim nombre As String
 
-        nombre = txtNombre.  
+        Dim clsPersona As New clsPersona()
 
         MessageBox.Show("Hola", "saludo")
     End Sub
+
 End Class

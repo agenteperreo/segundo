@@ -22,8 +22,10 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         btnSaludar = New Button()
         txtNombre = New TextBox()
+        ContextMenuStrip1 = New ContextMenuStrip(components)
         SuspendLayout()
         ' 
         ' btnSaludar
@@ -42,6 +44,11 @@ Partial Class Form1
         txtNombre.Size = New Size(100, 23)
         txtNombre.TabIndex = 1
         ' 
+        ' ContextMenuStrip1
+        ' 
+        ContextMenuStrip1.Name = "ContextMenuStrip1"
+        ContextMenuStrip1.Size = New Size(61, 4)
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -57,4 +64,5 @@ Partial Class Form1
 
     Friend WithEvents btnSaludar As Button
     Friend WithEvents txtNombre As TextBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "HolaMundo_Csharp_WPF/1.0.0": {
+        "dependencies": {
+          "LibreriaComun_Csharp": "1.0.0"
+        },
+        "runtime": {
+          "HolaMundo_Csharp_WPF.dll": {}
+        }
+      },
+      "LibreriaComun_Csharp/1.0.0": {
+        "runtime": {
+          "LibreriaComun_Csharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HolaMundo_Csharp_WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibreriaComun_Csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

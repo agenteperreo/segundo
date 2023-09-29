@@ -1,0 +1,11 @@
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\bin\Debug\net7.0\LibreriaComun_Csharp.deps.json
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\bin\Debug\net7.0\LibreriaComun_Csharp.dll
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\bin\Debug\net7.0\LibreriaComun_Csharp.pdb
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.AssemblyInfoInputs.cache
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.AssemblyInfo.cs
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.dll
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\refint\LibreriaComun_Csharp.dll
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\LibreriaComun_Csharp.pdb
+C:\Users\igarcia\Documents\GitHub\MDMA\interfaces\Tema3\Ejercicio1_Tema3\LibreriaComun_Csharp\obj\Debug\net7.0\ref\LibreriaComun_Csharp.dll
