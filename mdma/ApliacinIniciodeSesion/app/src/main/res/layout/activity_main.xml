@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5193A3"
+    android:backgroundTint="#5193A3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="54dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginBottom="10dp"
+        android:text="Usuario:"
+        app:layout_constraintBottom_toTopOf="@+id/txtContraseña"
+        app:layout_constraintEnd_toStartOf="@+id/txtUsuarioInput"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:text="Contraseña:"
+        app:layout_constraintEnd_toStartOf="@+id/txtContraseñaInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="256dp"
+        android:text="Log in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtContraseñaInput"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:hint="name123"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <EditText
+        android:id="@+id/txtUsuarioInput"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="name123"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
