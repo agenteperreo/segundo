@@ -71,9 +71,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStop() {
-        super.onStop()
-
+    override fun onDestroy() {
+        super.onDestroy()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channelId = "mi_canal_id"
             val channelName = "Mi Canal de Notificación"
@@ -92,7 +91,7 @@ class MainActivity : AppCompatActivity() {
         val notificationBuilder = NotificationCompat.Builder(this, "mi_canal_id")
             .setSmallIcon(R.drawable.ic_notificacion)
             .setContentTitle("Cierre de sesión")
-            .setContentText("Tienes que iniciar sesión cuando vuelvas")
+            .setContentText("Se ha cerrado la sesión de $nombre")
             .setContentIntent(pendingIntent)
             .setAutoCancel(true) // Cierra la notificación al tocarla
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
