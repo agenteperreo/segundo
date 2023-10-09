@@ -99,7 +99,7 @@ begin
 	declare @genero varchar(10)
 	declare @vecesPrestado int
 	
-	declare cursor cursorLibros for
+	declare cursorLibros cursor for
 	select top 4 l.NOMBRE, p.REFLIBRO, l.GENERO, COUNT(*) as 'Veces prestados'
 	from LIBROS l inner join PRESTAMOS p
 	on l.REFLIBRO = p.REFLIBRO
@@ -108,12 +108,14 @@ begin
 
 	open cursorLibros
 
-	fetch cursorLibros into @nombre, @refLibro, @genero, @vecesPrestados
+	fetch cursorLibros into @nombre, @refLibro, @genero, @vecesPrestado
 
 	while(@@FETCH_STATUS = 0) 
 	begin
-		
-		procesaLibro @variables, @refLibro
+
+		exec procesarLibro @refLibro, @nombre, @vecesPrestado, @genero
+
+		fetch cursorLibros into @nombre, @refLibro, @genero, @vecesPrestado
 
 	end
 
@@ -124,12 +126,96 @@ end
 
 
 
-create or alterprocedure procesarLibro @param
-	print @nombreLibro + numP + @fecha
+create or alter procedure procesarLibro @refLibro varchar(10), @nombreLibro varchar(10), @vecesPrestado int, @genero varchar(10)
+as 
+begin
 
-	declare cursor select sociosDeLsPrestamos
-	open cursor
-	fetch into 
-	-- mientras haya socios de ese libro
-	while
-		print socio
+	declare @DNI varchar(10)
+	declare @nombre varchar(20)
+	declare @direccion varchar(20)
+
+	declare socios cursor for 
+	select s.DNI, s.NOMBRE, s.DIRECCION from SOCIOS as s, PRESTAMOS as p where s.DNI = p.DNI and p.REFLIBRO = @refLibro
+
+	open socios
+
+	fetch socios into @DNI, @nombre, @direccion
+
+	while (@@FETCH_STATUS = 0)
+	begin
+
+		print 'Nombre: '+@nombre+' - DNI: '+@DNI+' - Direccion: '+@direccion
+		print 'Nombre del libro: '+@nombreLibro+' - Prestamos: '+cast(@vecesPrestado as varchar(10))+' - Genero: '+@genero
+		print ' '
+
+		fetch socios into @DNI, @nombre, @direccion
+
+	end
+	
+	close socios
+
+	deallocate socios
+
+end 
+
+exec listadoCuatroMasPrestados
+
+--Ejercicio 2
+
+create database escuela
+
+use escuela
+
+CREATE TABLE ALUMNOS
+(
+  DNI VARCHAR(10) constraint PK_ALUMNOS PRIMARY KEY NOT NULL,
+  APENOM VARCHAR(30),
+  DIREC VARCHAR(30),
+  POBLA  VARCHAR(15),
+  TELEF  VARCHAR(10)  
+)
+
+CREATE TABLE ASIGNATURAS
+(
+  COD int constraint PK_ASIGNATURAS PRIMARY KEY NOT NULL,
+  NOMBRE VARCHAR(25)
+)
+
+CREATE TABLE NOTAS
+(
+  DNI VARCHAR(10) FOREIGN KEY (DNI) REFERENCES ALUMNOS(DNI) NOT NULL,
+  COD int FOREIGN KEY (COD) REFERENCES ASIGNATURAS (COD) NOT NULL,
+  NOTA int
+  CONSTRAINT PK_NOTAS PRIMARY KEY (DNI, COD)
+)
+
+INSERT INTO ASIGNATURAS VALUES (1,'Prog. Leng. Estr.');
+INSERT INTO ASIGNATURAS VALUES (2,'Sist. Informáticos');
+INSERT INTO ASIGNATURAS VALUES (3,'Análisis');
+INSERT INTO ASIGNATURAS VALUES (4,'FOL');
+INSERT INTO ASIGNATURAS VALUES (5,'RET');
+INSERT INTO ASIGNATURAS VALUES (6,'Entornos Gráficos');
+INSERT INTO ASIGNATURAS VALUES (7,'Aplic. Entornos 4ªGen');
+
+INSERT INTO ALUMNOS VALUES
+('12344345','Alcalde García, Elena', 'C/Las Matas, 24','Madrid','917766545');
+
+INSERT INTO ALUMNOS VALUES
+('4448242','Cerrato Vela, Luis', 'C/Mina 28 - 3A', 'Madrid','916566545');
+
+INSERT INTO ALUMNOS VALUES
+('56882942','Díaz Fernández, María', 'C/Luis Vives 25', 'Móstoles','915577545');
+
+INSERT INTO NOTAS VALUES('12344345', 1,6);
+INSERT INTO NOTAS VALUES('12344345', 2,5);
+INSERT INTO NOTAS VALUES('12344345', 3,6);
+
+INSERT INTO NOTAS VALUES('4448242', 4,6);
+INSERT INTO NOTAS VALUES('4448242', 5,8);
+INSERT INTO NOTAS VALUES('4448242', 6,4);
+INSERT INTO NOTAS VALUES('4448242', 7,5);
+
+INSERT INTO NOTAS VALUES('56882942', 5,7);
+INSERT INTO NOTAS VALUES('56882942', 6,8);
+INSERT INTO NOTAS VALUES('56882942', 7,9);
+
