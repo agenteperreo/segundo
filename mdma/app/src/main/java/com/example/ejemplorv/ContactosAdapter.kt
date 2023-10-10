@@ -1,7 +1,9 @@
 package com.example.ejemplorv
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ejemplorv.databinding.ItemContactoBinding
 
 class ContactosAdapter(private val contactos : List<Contacto>) : RecyclerView.Adapter<ContactosAdapter.ViewHolder>(){
 
@@ -13,7 +15,7 @@ class ContactosAdapter(private val contactos : List<Contacto>) : RecyclerView.Ad
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val binding = ItemContactoBinding.inflate(layoutInflater.from(parent.context), parent, false)
+        val binding = ItemContactoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     }
 
     override fun getItemCount(): Int = contactos.size
