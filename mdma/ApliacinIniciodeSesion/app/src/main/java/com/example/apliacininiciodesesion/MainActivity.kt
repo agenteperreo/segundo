@@ -35,14 +35,23 @@ class MainActivity : AppCompatActivity() {
         var boton = activityMain.btnLogin
 
         boton.setOnClickListener {
-            contasena = activityMain.txtContraseAInput.text.toString()
+
+            val  intent = Intent(this, ControlActivity::class.java)
+
+            intent.putExtra("Usuario", activityMain.txtUsuarioInput.text.toString())
+
+            intent.putExtra("password", activityMain.txtContraseAInput.text.toString())
+
+            startActivity(intent)
+
+            /*contasena = activityMain.txtContraseAInput.text.toString()
             nombre = activityMain.txtUsuarioInput.text.toString()
             if(contasena.equals("abc123")) {
                 setContentView(bienvenida.root)
                 bienvenida.txtBienvenida.text = "Nos alegramos de que vuelvas, $nombre"
             } else {
                 Toast.makeText(applicationContext, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
-            }
+            }*/
         }
 
 
