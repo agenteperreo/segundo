@@ -219,4 +219,8 @@ INSERT INTO NOTAS VALUES('56882942', 5,7);
 INSERT INTO NOTAS VALUES('56882942', 6,8);
 INSERT INTO NOTAS VALUES('56882942', 7,9);
 
-	
+create or alter procedure ejercicio2 @moduloBd varchar(10)
+as
+begin
+
+end
