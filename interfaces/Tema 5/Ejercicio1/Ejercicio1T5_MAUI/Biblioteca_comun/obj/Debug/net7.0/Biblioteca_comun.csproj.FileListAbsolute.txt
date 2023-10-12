@@ -1,0 +1,11 @@
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\bin\Debug\net7.0\Biblioteca_comun.deps.json
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\bin\Debug\net7.0\Biblioteca_comun.dll
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\bin\Debug\net7.0\Biblioteca_comun.pdb
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.AssemblyInfoInputs.cache
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.AssemblyInfo.cs
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.csproj.CoreCompileInputs.cache
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.dll
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\refint\Biblioteca_comun.dll
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\Biblioteca_comun.pdb
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Biblioteca_comun\obj\Debug\net7.0\ref\Biblioteca_comun.dll
