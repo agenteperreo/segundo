@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-10T12:24:28.580</Modified>
+      <Modified>2023-10-13T07:40:28.710</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-10T12:08:30.612</Modified>
+      <Modified>2023-10-13T07:39:03.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\EjerciciosT6E1.runtimeconfig.json">
       <PackagePath>EjerciciosT6E1.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-10T12:08:30.419</Modified>
+      <Modified>2023-10-13T07:39:03.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\EjerciciosT6E1.dll">
       <PackagePath>EjerciciosT6E1.dll</PackagePath>
-      <Modified>2023-10-10T12:24:27.683</Modified>
+      <Modified>2023-10-13T07:40:27.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>EjerciciosT6E1.exe</PackagePath>
-      <Modified>2023-10-10T12:24:27.692</Modified>
+      <Modified>2023-10-13T07:40:27.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\EjerciciosT6E1.deps.json">
       <PackagePath>EjerciciosT6E1.deps.json</PackagePath>
-      <Modified>2023-10-10T12:08:30.306</Modified>
+      <Modified>2023-10-13T07:39:03.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\igarcia\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

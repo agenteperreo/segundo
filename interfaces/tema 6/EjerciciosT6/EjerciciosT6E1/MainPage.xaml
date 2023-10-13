@@ -5,6 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout
+            x:Name="vslLayout"
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
@@ -24,7 +25,7 @@
                 Margin="30"
                 />
 
-            <Button x:Name="btn2">
+            <Button x:Name="btn2" Clicked="onClickBtn2">
                 <Button.Text>Botón 2</Button.Text>
                 <Button.HorizontalOptions>Center</Button.HorizontalOptions>
                 <Button.VerticalOptions>Center</Button.VerticalOptions>
