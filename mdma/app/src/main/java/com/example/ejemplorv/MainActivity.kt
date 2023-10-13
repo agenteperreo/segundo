@@ -1,5 +1,7 @@
 package com.example.ejemplorv
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejemplorv.databinding.ActivityMainBinding
@@ -13,21 +15,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(contactos.root)
         contactos.vistaContactos.adapter = ContactosAdapter(
             listOf(
-                Contacto("Juan", "123456"),
-                Contacto("María", "678456123"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-                Contacto("Raúl", "644789456"),
-            )
+                Contacto("Juan Antonio Fernandez Guerrero", "123456", "H"),
+                Contacto("María Palacios Sanchez", "678456123", "M"),
+                Contacto("Raúl Gamero Valiente", "644789456", "H"),
+                Contacto("Raúl", "644789456", "H"),
+                Contacto("Raúl", "644789456", "M"),
+                Contacto("Raúl", "644789456", "M"),
+                Contacto("Raúl", "644789456", "M"),
+                Contacto("Raúl", "644789456", "M"),
+                Contacto("Raúl", "644789456", "H"),
+                Contacto("Raúl", "644789456", "H"),
+                Contacto("Raúl", "644789456", "M"),
+                Contacto("Raúl", "644789456", "H"),
+                Contacto("Raúl", "644789456", "H"),
+                Contacto("Raúl", "644789456", "M")
+            ), object : ContactoPulsadorListener {
+                override fun contactoPulsado(contacto: Contacto) {
+                    val dial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + contacto.tlfno))
+                    startActivity(dial)
+                }
+            }
         )
     }
 }
