@@ -11,7 +11,7 @@ class ImagenesAdapter(private val imagenes : List<Imagen>) :
     RecyclerView.Adapter<ImagenesAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ItemImagenesBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(imagen: Imagen) {
+        fun bind(imagen: Imagen){
             Glide
                 .with(binding.root)
                 .load(imagen.url)
