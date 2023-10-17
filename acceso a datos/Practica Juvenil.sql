@@ -219,8 +219,51 @@ INSERT INTO NOTAS VALUES('56882942', 5,7);
 INSERT INTO NOTAS VALUES('56882942', 6,8);
 INSERT INTO NOTAS VALUES('56882942', 7,9);
 
-create or alter procedure ejercicio2 @moduloBd varchar(10)
+create or alter procedure ejercicio2 @modulo varchar(50)
 as
 begin
+	
+	declare @cod int
 
+	if not exists (select @cod from ASIGNATURAS where NOMBRE=@modulo)
+	begin
+
+		print 'Esta asignatura no existe'
+
+	end
+
+	else
+	begin
+
+		set @cod = (select COD from ASIGNATURAS where NOMBRE=@modulo)
+
+		set @CantAl int
+
+		set @CantAl = (select count(DNI) from ASIGNATURAS left join NOTAS on ASIGNATURAS.COD = NOTAS.COD where ASIGNATURAS.COD=@cod)
+
+		if @CantAl = 0
+		begin
+
+			print 'No hay alumnos en esta asignatura'
+
+		end
+
+		else
+		begin
+
+			declare @numSusp int
+			declare @numApro int
+			declare @numNotb int
+			declare @numSobr int
+			declare @nombre varchar(30)
+			declare @nota int
+
+
+		end
+	end
 end
+
+
+select * from alumnos
+select * from NOTAS
+select * from ASIGNATURAS where nombre = 'Entornos Gráficos'
