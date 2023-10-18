@@ -8,8 +8,12 @@
 
     <ImageView
         android:id="@+id/imgAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="niso"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
 </LinearLayout>

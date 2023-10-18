@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         imagenes.VistaImagen.adapter = ImagenesAdapter(
             listOf(
+                // Generamos las 24 imagenes con url aleatoria de la pagina loremflicker
                 Imagen("https://loremflickr.com/320/240?random=1"),
                 Imagen("https://loremflickr.com/320/240?random=2"),
                 Imagen("https://loremflickr.com/320/240?random=3"),
@@ -39,8 +40,17 @@ class MainActivity : AppCompatActivity() {
                 Imagen("https://loremflickr.com/320/240?random=22"),
                 Imagen("https://loremflickr.com/320/240?random=23"),
                 Imagen("https://loremflickr.com/320/240?random=24")
-            )
+            ),
+            object : ImagenPulsadorListener{
 
+                // Sobre escribimibos la funcion de la interfaz
+                override fun imagenPulsada(imagen: Imagen) {
+                    val dial = Intent(Intent.ACTION_DIAL, Uri.parse(imagen.url))
+
+                    startActivity(dial)
+                }
+
+            }
         )
     }
 }
