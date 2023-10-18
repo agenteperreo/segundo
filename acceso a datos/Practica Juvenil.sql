@@ -237,7 +237,7 @@ begin
 
 		set @cod = (select COD from ASIGNATURAS where NOMBRE=@modulo)
 
-		set @CantAl int
+		declare @CantAl int
 
 		set @CantAl = (select count(DNI) from ASIGNATURAS left join NOTAS on ASIGNATURAS.COD = NOTAS.COD where ASIGNATURAS.COD=@cod)
 
@@ -252,13 +252,87 @@ begin
 		begin
 
 			declare @numSusp int
+			set @numSusp = 0
+
 			declare @numApro int
+			set @numApro = 0
+
 			declare @numNotb int
+			set @numNotb = 0
+
 			declare @numSobr int
+			set @numSobr = 0
+
 			declare @nombre varchar(30)
+
 			declare @nota int
 
+			declare @notaAlta int
+			set @notaAlta = 0
 
+			declare @notaBaja int
+			set @notaBaja = 10
+
+			declare @nombreNotaAlta varchar(30)
+
+			declare @nombreNotaBaja varchar(30)
+
+			declare infoNotas cursor for select alu.APENOM, nota.NOTA 
+			from ASIGNATURAS as asig, ALUMNOS as alu, NOTAS as nota where
+			asig.NOMBRE=@modulo and asig.COD=nota.COD and nota.DNI=alu.DNI
+
+			open infoNotas
+
+			fetch infoNotas into @nombre, @nota
+
+			while (@@FETCH_STATUS = 0)
+			begin
+
+				print 'Nombre: '+@nombre
+				print 'Nota: '+cast(@nota as varchar(5))
+
+				if (@nota<5)
+				begin
+					set @numSusp += 1
+				end
+				else if(@nota>=5 and @nota<7)
+				begin
+					set @numApro += 1
+				end
+				else if(@nota>=7 and @nota<9)
+				begin
+					set @numApro += 1
+					set @numNotb += 1
+				end
+				else
+				begin
+					set @numApro += 1
+					set @numSobr +=1
+				end
+
+				if(@nota>@notaAlta)
+				begin
+					set @notaAlta = @nota
+					set @nombreNotaAlta = @nombre
+				end
+
+				if(@nota<@notaBaja)
+				begin
+					set @notaBaja = @nota
+					set @nombreNotaBaja = @nombre
+				end
+
+				fetch infoNotas into @nombre, @nota
+
+			end
+			
+			print 'Suspensos: '+cast(@numSusp as varchar(5))+'  Aprobados: '+cast(@numApro as varchar(5))+'  Notables: '+cast(@numNotb as varchar(5))+'  Sobresalientes: '+cast(@numSobr as varchar(5))
+			print 'La nota mas alta es: '+cast(@notaAlta as varchar(5))+' y es de '+@nombreNotaAlta
+			print 'La nota mas baja es: '+cast(@notaBaja as varchar(5))+' y es de '+@nombreNotaBaja
+		
+			close infoNotas
+
+			deallocate infoNotas
 		end
 	end
 end
@@ -267,3 +341,6 @@ end
 select * from alumnos
 select * from NOTAS
 select * from ASIGNATURAS where nombre = 'Entornos Gráficos'
+exec ejercicio2 'Entornos Gráficos'
+
+--Ejercicio 3
