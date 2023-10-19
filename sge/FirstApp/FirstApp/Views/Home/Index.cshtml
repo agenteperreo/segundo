@@ -1,7 +1,20 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
 
-@Html.ActionLink("Click Here", "ListadoProductos","Productos")
+@Html.ActionLink("Dale mi loco", "ListadoProductos","Productos")
+
+@{
+
+    DateTime hora = DateTime.Now;
+
+    <p>Hola son las @hora.Hour:@hora.Minute</p>
+
+    <p>Hola, hoy es @hora.ToLongDateString() a las @hora.Hour:@hora.Minute.@hora.Second</p>
+
+    if (@DateTime.Now.Hour > 12) {
+        <p>Hemos pasado de las 12 del mediodia</p>
+    } else {
+        <p>Aún no hemos pasado de las 12 del mediodia</p>
+    }
+}
