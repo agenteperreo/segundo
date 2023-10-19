@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio1_T7.Views.Pagina2"
+             IconImageSource="dotnet_bot.svg"
              Title="Pagina 2">
     <VerticalStackLayout>
         <Label 
-            Text="Soy la pagina 2"
+            Text="Hola soy la pagina 2"
             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

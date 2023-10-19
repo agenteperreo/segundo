@@ -971,3 +971,10 @@ C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\resizetizer\r\drawable\youtube.png
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\resizetizer\r\drawable\bitcoin.png
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-android\BibliotecaDeClases.dll
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-android\BibliotecaDeClases.pdb
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\Ejercicio1_T7.csproj.CopyComplete
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\android\assets\BibliotecaDeClases.dll
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-android\android\assets\BibliotecaDeClases.pdb

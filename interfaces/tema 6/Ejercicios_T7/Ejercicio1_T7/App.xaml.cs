@@ -8,7 +8,7 @@ namespace Ejercicio1_T7
         {
             InitializeComponent();
 
-            MainPage = new PaginaTabbed();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

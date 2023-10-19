@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio1_T7.Views.PaginaTabbed"
              xmlns:local="clr-namespace:Ejercicio1_T7.Views"
-             Title="PaginaTabbed">
+             Title="PaginaTabbed"
+            BarBackground="LightBlue"
+            BarBackgroundColor="Black"
+            BarTextColor="Red"
+            SelectedTabColor="Yellow"
+            UnselectedTabColor="AntiqueWhite">
 
     <local:Pagina1></local:Pagina1>
     <local:Pagina2></local:Pagina2>
