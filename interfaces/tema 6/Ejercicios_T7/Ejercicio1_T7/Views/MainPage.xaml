@@ -10,8 +10,7 @@
         VerticalOptions="Center">
 
         <Entry
-            x:Name="txtNombre"
-            Text="Nombre"/>
+            x:Name="txtNombre"/>
 
         <Entry
             x:Name="txtApellidos"
