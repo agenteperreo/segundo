@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h2>Apartado ViewData</h2>
+    <p>@ViewData["Saludo"]</p>
+
+    <h2>Apartado ViewBag</h2>
+    <p>@ViewBag.Fecha</p>
+
+    <h2>Apartado objeto persona</h2>
+    <p>Nombre: @Model.nombre</p>
+    <p>Apellidos: @Model.apellidos</p>
+    <p>Telefono: @Model.telefono</p>
+</div>
