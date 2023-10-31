@@ -1,0 +1,1 @@
+C:\github\segundo\interfaces\Tema8_Interfaces\Ej2_Interfaces\Ej2_Interfaces.csproj;x64
