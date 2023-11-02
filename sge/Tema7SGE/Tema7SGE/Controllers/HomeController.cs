@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Tema7SGE.Models;
+using Tema7SGE.Models.DAL;
 using Tema7SGE.Models.Entidades;
 
 namespace Tema7SGE.Controllers
@@ -41,15 +42,17 @@ namespace Tema7SGE.Controllers
             
         }
 
-        public IActionResult Privacy()
+        public IActionResult listadoPersonas()
         {
-            return View();
+            try
+            {
+                return View(ListaPersonas.listadoCompletoPersonas());
+            } catch (Exception ex) { //Mandar a otra vista de error
+                                     
+                return View(ListaPersonas.listadoCompletoPersonas());
+            }
+            
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

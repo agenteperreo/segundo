@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ej4_Interfaces.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                x:Name="PrimerParrafo"
+                Text="Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper integer tortor eros duis class fringilla nascetur, primis ornare dictumst ultrices placerat torquent. Etiam tellus fames non nam nascetur nisl, sodales natoque mus vestibulum mi, tempus est fringilla eu parturient. Tellus habitant leo ante elementum duis vulputate imperdiet auctor convallis, sollicitudin gravida penatibus morbi pellentesque donec sociosqu mi dapibus, accumsan purus senectus quis parturient suscipit nisi nisl."
+                BackgroundColor="Azure"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="SegundoParrafo"
+                Text="Nam pharetra sociosqu habitant massa himenaeos parturient aliquam class integer arcu curabitur tellus sodales, interdum tortor potenti pretium rhoncus cursus donec enim etiam nunc fermentum quis. Eu vitae ridiculus ultricies mattis pretium cras morbi libero mus diam varius lacinia dapibus eros gravida pharetra, nec non purus tellus nullam leo lacus quam tortor vehicula in magnis bibendum cum. Penatibus sed ultricies eget elementum sagittis nibh mus, commodo nascetur orci enim risus arcu, nec parturient euismod quam pretium vestibulum."
+                BackgroundColor="Beige"
+                HorizontalOptions="Center"/>
+
+
+            <HorizontalStackLayout BackgroundColor="BlanchedAlmond">
+
+                <FlexLayout>
+
+                    <Image
+                            Source="dotnet_bot.png"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Margin="10"/>
+
+                    <Image
+                            Source="youtube.png"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Margin="10"/>
+
+                    <Image
+                            Source="dotnet_bot.png"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Margin="10"/>
+
+
+                </FlexLayout>
+
+                <VerticalStackLayout>
+
+                    <Border Margin="10">
+                        <Label
+                            x:Name="lblTexto1"
+                            Text="Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper integer tortor eros duis class fringilla nascetur, primis ornare dictumst ultrices placerat torquent. "
+                            />
+                    </Border>
+
+                    <Border  Margin="10">
+                        <Label
+                            x:Name="lblTexto2"
+                            Text="Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper integer tortor eros duis class fringilla nascetur, primis ornare dictumst ultrices placerat torquent. "
+                            />
+                    </Border>
+
+                    <Border  Margin="10">
+                        <Label
+                            x:Name="lblTexto3"
+                            Text="Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper integer tortor eros duis class fringilla nascetur, primis ornare dictumst ultrices placerat torquent. "
+                            />
+                    </Border>
+
+                    <Border  Margin="10">
+                        <Label
+                            x:Name="lblTexto4"
+                            Text="Lorem ipsum dolor sit amet consectetur adipiscing elit, ullamcorper integer tortor eros duis class fringilla nascetur, primis ornare dictumst ultrices placerat torquent. "
+                            />
+                    </Border>
+                    
+
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

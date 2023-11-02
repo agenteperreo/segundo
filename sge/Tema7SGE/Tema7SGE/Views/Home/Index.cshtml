@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Tema7SGE.Models.Entidades.clsPersona
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -14,4 +16,6 @@
     <p>Nombre: @Model.nombre</p>
     <p>Apellidos: @Model.apellidos</p>
     <p>Telefono: @Model.telefono</p>
+
+    @Html.ActionLink("Listado Personas", "listadoPersonas", "Home")
 </div>

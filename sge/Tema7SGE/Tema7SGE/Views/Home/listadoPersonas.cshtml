@@ -1,0 +1,22 @@
+﻿@using Tema7SGE.Models.Entidades;
+@model List<Tema7SGE.Models.Entidades.clsPersona>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (clsPersona persona in Model) {
+            <tr>
+                <td>@persona.nombre</td>
+                <td>@persona.apellidos</td>
+                <td>@persona.telefono</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
