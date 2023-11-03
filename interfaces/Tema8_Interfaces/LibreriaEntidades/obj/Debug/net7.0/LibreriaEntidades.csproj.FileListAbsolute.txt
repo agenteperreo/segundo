@@ -1,0 +1,11 @@
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\bin\Debug\net7.0\LibreriaEntidades.deps.json
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\bin\Debug\net7.0\LibreriaEntidades.dll
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\bin\Debug\net7.0\LibreriaEntidades.pdb
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.AssemblyInfoInputs.cache
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.AssemblyInfo.cs
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.csproj.CoreCompileInputs.cache
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.dll
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\refint\LibreriaEntidades.dll
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\LibreriaEntidades.pdb
+C:\github\segundo\interfaces\Tema8_Interfaces\LibreriaEntidades\obj\Debug\net7.0\ref\LibreriaEntidades.dll

@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\github\segundo\interfaces\Tema8_Interfaces\Ej4_Interfaces\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-02T12:26:39.414</Modified>
+      <Modified>2023-11-03T08:59:16.502</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema8_Interfaces\Ej4_Interfaces\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ej4_Interfaces.dll">
       <PackagePath>Ej4_Interfaces.dll</PackagePath>
-      <Modified>2023-11-02T12:26:38.333</Modified>
+      <Modified>2023-11-03T07:53:34.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema8_Interfaces\Ej4_Interfaces\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ej4_Interfaces.exe</PackagePath>
-      <Modified>2023-11-02T12:26:38.344</Modified>
+      <Modified>2023-11-03T07:53:34.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema8_Interfaces\Ej4_Interfaces\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ej4_Interfaces.deps.json">
       <PackagePath>Ej4_Interfaces.deps.json</PackagePath>

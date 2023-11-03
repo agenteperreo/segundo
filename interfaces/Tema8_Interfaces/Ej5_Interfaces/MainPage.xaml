@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ej5_Interfaces.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <ListView x:Name="personasListView" ItemsSource="{Binding Personas}" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <HorizontalStackLayout Margin="0, 0, 0, 10">
+                                <Label x:Name="lblNombre"
+                                Text="{Binding Nombre}"
+                                       Margin="0, 0, 10, 0"/>
+
+                                <Label x:Name="lblApellidos"
+                                Text="{Binding Apellidos}"/>
+                            </HorizontalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
