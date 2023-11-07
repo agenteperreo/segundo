@@ -1,7 +1,6 @@
 package com.example.piedrapapeltijeras
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -10,23 +9,36 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.piedrapapeltijeras.ui.theme.PiedraPapelTijerasTheme
-import kotlinx.coroutines.withContext
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
+
+    var winsUsu = 0
+
+    var winsMaquina = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             PiedraPapelTijerasTheme {
                 // A surface container using the 'background' color from the theme
@@ -38,7 +50,8 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        Mandos()
+                        //inicioDeSesion()
+                        Mandos(winsUsu, winsMaquina)
                     }
                 }
             }
@@ -46,10 +59,26 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun inicioDeSesion() {
+
+    var text by remember {
+        mutableStateOf("")
+    }
+
+    Row {
+        OutlinedTextField(
+            value = text,
+            onValueChange = { text = it },
+            label = { Text("Nombre de usuario") }
+        )
+    }
+}
+
 
 @Composable
-fun Mandos(modifier: Modifier = Modifier) {
-
+fun Mandos(winsUsu:Int, winsMaquina:Int) {
     // Imagen clickada por el jugador
     var jugador = remember {
         mutableStateOf(0)
@@ -75,6 +104,23 @@ fun Mandos(modifier: Modifier = Modifier) {
 
     var imagenM: Int
 
+    // Dependiendo de las opciones gana el jugador o gana la maquina
+    if (jugador.value == 1 && maquina.value == 3) {
+        winsUsu++
+    } else if (jugador.value == 2 && maquina.value == 1) {
+        winsUsu++
+    } else if (jugador.value == 3 && maquina.value == 2) {
+        winsUsu++
+    }
+
+    if (jugador.value == 1 && maquina.value == 2) {
+        winsMaquina++
+    } else if (jugador.value == 2 && maquina.value == 3) {
+        winsMaquina++
+    } else if (jugador.value == 3 && maquina.value == 1) {
+        winsMaquina++
+    }
+
     if (maquina.value == 1)
         imagenM = R.drawable.piedra
     else if (maquina.value == 2)
@@ -84,53 +130,27 @@ fun Mandos(modifier: Modifier = Modifier) {
     else
         imagenM = R.drawable.ic_launcher_background
 
-    Column (
+    Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween
-    ){
-        Row(
-            verticalAlignment = Alignment.Top,
-            horizontalArrangement = Arrangement.Center
-        ) {
-
-            Image(
-                painter = painterResource(id = R.drawable.piedra),
-                contentDescription = "Piedra",
-                modifier = Modifier
-                    .weight(1F)
-                    .size(100.dp, 100.dp)
-                    .clickable {
-                        maquina.value = 1
-                    }
-            )
-
-            Image(
-                painter = painterResource(id = R.drawable.papel),
-                contentDescription = "Papel",
-                modifier = Modifier
-                    .weight(1F)
-                    .size(100.dp, 100.dp)
-                    .clickable {
-                        maquina.value = 2
-                    }
-            )
-
-            Image(
-                painter = painterResource(id = R.drawable.tijeras),
-                contentDescription = "Tijeras",
-                modifier
-                    .weight(1F)
-                    .size(100.dp, 100.dp)
-                    .clickable {
-                        maquina.value = 3
-                    }
-            )
-
-        }
+    ) {
 
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            modifier = Modifier
+                .weight(1F, true)
+                .fillMaxWidth()
+        ) {
+            Text(text = "${winsUsu}-${winsMaquina}", fontSize = 36.sp )
+        }
+
+        Row(
+            verticalAlignment = Alignment.Top,
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            modifier = Modifier
+                .weight(1F, true)
+                .fillMaxWidth()
         ) {
             Column {
                 Text(
@@ -171,6 +191,7 @@ fun Mandos(modifier: Modifier = Modifier) {
                     .size(100.dp, 100.dp)
                     .clickable {
                         jugador.value = 1
+                        maquina.value = tiradaMaquina()
                     }
             )
 
@@ -182,21 +203,31 @@ fun Mandos(modifier: Modifier = Modifier) {
                     .size(100.dp, 100.dp)
                     .clickable {
                         jugador.value = 2
+                        maquina.value = tiradaMaquina()
                     }
             )
 
             Image(
                 painter = painterResource(id = R.drawable.tijeras),
                 contentDescription = "Tijeras",
-                modifier
+                modifier = Modifier
                     .weight(1F)
                     .size(100.dp, 100.dp)
                     .clickable {
                         jugador.value = 3
+                        maquina.value = tiradaMaquina()
                     }
             )
 
         }
     }
+}
 
+fun tiradaMaquina():Int {
+    var movimiento= 0
+    val list= listOf(1, 2, 3)
+    val index= Random.nextInt(list.size)
+    movimiento=list[index]
+
+    return movimiento
 }
