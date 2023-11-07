@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LasPlacas", "LasPlacas\LasPlacas.csproj", "{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objetos", "Objetos\Objetos.csproj", "{F82298A9-FFAD-40AC-950B-17EF8F0C4E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE0D187-3B0D-43CC-B1E2-DDB7C1BB2A27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F82298A9-FFAD-40AC-950B-17EF8F0C4E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82298A9-FFAD-40AC-950B-17EF8F0C4E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82298A9-FFAD-40AC-950B-17EF8F0C4E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82298A9-FFAD-40AC-950B-17EF8F0C4E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5231D241-25B7-4936-97CD-1C4771138143}
+	EndGlobalSection
+EndGlobal

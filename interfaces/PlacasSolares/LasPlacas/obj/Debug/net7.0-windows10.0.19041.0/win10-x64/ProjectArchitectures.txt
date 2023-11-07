@@ -1,0 +1,1 @@
+C:\github\segundo\interfaces\PlacasSolares\LasPlacas\LasPlacas.csproj;x64
