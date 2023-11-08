@@ -32,10 +32,6 @@ import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
 
-    var winsUsu = 0
-
-    var winsMaquina = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -51,7 +47,7 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         //inicioDeSesion()
-                        Mandos(winsUsu, winsMaquina)
+                        Mandos()
                     }
                 }
             }
@@ -78,7 +74,7 @@ fun inicioDeSesion() {
 
 
 @Composable
-fun Mandos(winsUsu:Int, winsMaquina:Int) {
+fun Mandos() {
     // Imagen clickada por el jugador
     var jugador = remember {
         mutableStateOf(0)
@@ -103,6 +99,10 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
         imagen = R.drawable.ic_launcher_background
 
     var imagenM: Int
+
+    var winsUsu = 0
+
+    var winsMaquina = 0
 
     // Dependiendo de las opciones gana el jugador o gana la maquina
     if (jugador.value == 1 && maquina.value == 3) {

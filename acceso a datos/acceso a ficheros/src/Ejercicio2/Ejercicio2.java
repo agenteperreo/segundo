@@ -45,6 +45,9 @@ public class Ejercicio2 {
 
 					// Creamos el nuevo directorio
 					new File(directorioSup, dato).mkdir();
+					
+					//Creamos el index
+					creaHTML(directorioSup, datos[0]);
 
 					// Sobre escribimos la variable auxiliar
 					directorioSup = directorio;
@@ -57,6 +60,10 @@ public class Ejercicio2 {
 
 					// Creamos el nuevo directorio
 					new File(directorioSup, dato).mkdir();
+					
+					creaHTML(directorioSup, datos[1]);
+					
+					creaHTML(directorioSup+"/"+datos[2], datos[2]);
 
 				}
 
