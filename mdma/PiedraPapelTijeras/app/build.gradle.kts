@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -71,4 +71,5 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.room:room-ktx:2.6.0")
     kapt("androidx.room:room-compiler:2.6.0")
+    implementation("androidx.navigation:navigation-common:2.7.5")
 }
