@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\github\\segundo\\interfaces\\Tema 5\\Ejercicio1\\Ejercicio1T5_MAUI\\Biblioteca_comun\\Biblioteca_comun.csproj",
         "projectName": "Biblioteca_comun",
         "projectPath": "C:\\github\\segundo\\interfaces\\Tema 5\\Ejercicio1\\Ejercicio1T5_MAUI\\Biblioteca_comun\\Biblioteca_comun.csproj",
-        "packagesPath": "C:\\Users\\igarcia\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\isaac\\.nuget\\packages\\",
         "outputPath": "C:\\github\\segundo\\interfaces\\Tema 5\\Ejercicio1\\Ejercicio1T5_MAUI\\Biblioteca_comun\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\igarcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {}
         },
         "frameworks": {
           "net7.0": {
@@ -60,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,1 +1,1 @@
-C:\github\Tema 5\Ejercicio1T5_MAUI_HolaMundo\Ejercicio1T5_MAUI_HolaMundo\Ejercicio1T5_MAUI_HolaMundo.csproj;x64
+C:\github\segundo\interfaces\Tema 5\Ejercicio1\Ejercicio1T5_MAUI\Ejercicio1T5_MAUI_HolaMundo\Ejercicio1T5_MAUI_HolaMundo.csproj;x64

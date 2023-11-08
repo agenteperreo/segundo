@@ -1,0 +1,17 @@
+﻿<maui:MauiWinUIApplication
+<<<<<<<< Updated upstream:interfaces/PlacasSolares/LasPlacas/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.xaml
+    x:Class="LasPlacas.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:LasPlacas.WinUI">
+========
+    x:Class="Ej1_Interfaces.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:Ej1_Interfaces.WinUI">
+>>>>>>>> Stashed changes:interfaces/Tema8_Interfaces/Ej1_Interfaces/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/Platforms/Windows/App.xaml
+
+</maui:MauiWinUIApplication>
+

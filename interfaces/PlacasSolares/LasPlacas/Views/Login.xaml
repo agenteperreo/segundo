@@ -3,34 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LasPlacas.MainPage">
 
-    <ScrollView>
+    <Grid>
+
+        <Image x:Name="imgFondo1" 
+               Source="placas1.png"
+               Grid.RowSpan="2"
+               HorizontalOptions="Fill"
+               Aspect="AspectFill"/>
+
+        <Label x:Name="lblNomEmpresa"
+               Text="Solar Power"
+               TextColor="White"
+               Margin="0,131,0,0"
+               HorizontalOptions="Center"
+               FontSize="Title"/>
+
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+            HeightRequest="300" 
+            VerticalOptions="Center" 
+            WidthRequest="400" 
+            HorizontalOptions="Center">
 
-            <Image x:Name="LogIn1"
-                   Source="placas1.png"
-                   />
+            <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10">
+                <Entry x:Name="NombreUsuario"
+                    Placeholder="Usuario"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"/>
+            </Border>
 
-            <Entry x:Name="NombreUsuario"
-                   Placeholder="Usuario"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   WidthRequest="300"
-                   />
+            <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10" Margin="20">
+                <Entry x:Name="Contraseña"
+                    Placeholder="Contraseña"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                       BackgroundColor="White"
+                    WidthRequest="300"/>
+            </Border>
 
-            <Entry x:Name="Contraseña"
-                   Placeholder="Contraseña"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   WidthRequest="300"
-                   Margin="20"/>
-
-            <ImageButton/>
-
+            <Button x:Name="btnLogIn"
+                Text="Log In"
+                WidthRequest="75"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="#4E6694"
+                TextColor="White"/>
 
         </VerticalStackLayout>
-    </ScrollView>
+
+    </Grid>
 
 </ContentPage>
+
