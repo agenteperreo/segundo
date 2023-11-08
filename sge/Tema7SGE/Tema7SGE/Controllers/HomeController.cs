@@ -3,6 +3,7 @@ using System.Diagnostics;
 using Tema7SGE.Models;
 using Tema7SGE.Models.DAL;
 using Tema7SGE.Models.Entidades;
+using Tema7SGE.Models.ViewModels;
 
 namespace Tema7SGE.Controllers
 {
@@ -17,6 +18,8 @@ namespace Tema7SGE.Controllers
 
         public IActionResult Index()
         {
+
+            DateTime fecha = DateTime.Now;
             if(DateTime.Now.Hour<12)
             {
                 ViewData["Saludo"] = "Buenos dias";
@@ -30,7 +33,7 @@ namespace Tema7SGE.Controllers
                 ViewData["Saludo"] = "Buenas noches";
             }
 
-            ViewBag.Fecha = DateTime.Now;
+            ViewBag.Fecha = fecha.ToLongDateString();
 
             clsPersona clsPersona = new clsPersona();
             clsPersona.nombre = "Isaac";
@@ -52,6 +55,11 @@ namespace Tema7SGE.Controllers
                 return View(ListaPersonas.listadoCompletoPersonas());
             }
             
+        }
+
+        public IActionResult editarPersona()
+        {
+            return View(listaDepartamento.listadoCompletoDepartamento());
         }
 
     }

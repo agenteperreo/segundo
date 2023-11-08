@@ -32,10 +32,6 @@ import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
 
-    var winsUsu = 0
-
-    var winsMaquina = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -46,12 +42,15 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    // Columna orientada al centro en ambos sentidos
                     Column(
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         //inicioDeSesion()
-                        Mandos(winsUsu, winsMaquina)
+
+                        // Llamo a la función composable
+                        Mandos()
                     }
                 }
             }
@@ -78,7 +77,11 @@ fun inicioDeSesion() {
 
 
 @Composable
-fun Mandos(winsUsu:Int, winsMaquina:Int) {
+fun Mandos() {
+
+    // Cantidad de partidas jugadas por el jugador
+    var partidasJugadas = 0
+
     // Imagen clickada por el jugador
     var jugador = remember {
         mutableStateOf(0)
@@ -102,7 +105,14 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
     else
         imagen = R.drawable.ic_launcher_background
 
+    // Imagen a la que se cambiará la imagen central de la maquina
     var imagenM: Int
+
+    // Cantidad de victorias del usuario
+    var winsUsu = 0
+
+    // Cantidad de victorias de la maquina
+    var winsMaquina = 0
 
     // Dependiendo de las opciones gana el jugador o gana la maquina
     if (jugador.value == 1 && maquina.value == 3) {
@@ -113,6 +123,7 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
         winsUsu++
     }
 
+    // Dependidendo de la eleccion de la maquina y el jugador se da loa victoria al jugador o a la maquina
     if (jugador.value == 1 && maquina.value == 2) {
         winsMaquina++
     } else if (jugador.value == 2 && maquina.value == 3) {
@@ -130,11 +141,13 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
     else
         imagenM = R.drawable.ic_launcher_background
 
+    // Columna que contendrá toda la interfaz
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
 
+        // Fila que contiene el marcador de jugador-maquina
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceEvenly,
@@ -145,6 +158,7 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
             Text(text = "${winsUsu}-${winsMaquina}", fontSize = 36.sp )
         }
 
+        // Fila que contiene 2 columnas
         Row(
             verticalAlignment = Alignment.Top,
             horizontalArrangement = Arrangement.SpaceEvenly,
@@ -152,11 +166,14 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
                 .weight(1F, true)
                 .fillMaxWidth()
         ) {
+            // Columna que contiene el texto de jugador y la imagen de la elección del jugador
             Column {
+                // Texto
                 Text(
                     text = "Jugador"
                 )
 
+                // Imagen elegida
                 Image(
                     painter = painterResource(id = imagen),
                     contentDescription = "Eleccion jugador",
@@ -165,11 +182,14 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
 
             }
 
+            // Columna que contiene el texto y la imagen de la maquina
             Column {
+                // Texto
                 Text(
                     text = "Maquina"
                 )
 
+                // Imagen elegida por la maquina
                 Image(
                     painter = painterResource(id = imagenM),
                     contentDescription = "Eleccion Maquina",
@@ -178,11 +198,13 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
             }
         }
 
+        // Fila que contiene las opciones del jugador
         Row(
             verticalAlignment = Alignment.Bottom,
             horizontalArrangement = Arrangement.Center
         ) {
 
+            // Imagen de la piedra
             Image(
                 painter = painterResource(id = R.drawable.piedra),
                 contentDescription = "Piedra",
@@ -192,9 +214,11 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
                     .clickable {
                         jugador.value = 1
                         maquina.value = tiradaMaquina()
+                        partidasJugadas++
                     }
             )
 
+            // Imagen del papel
             Image(
                 painter = painterResource(id = R.drawable.papel),
                 contentDescription = "Papel",
@@ -204,9 +228,11 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
                     .clickable {
                         jugador.value = 2
                         maquina.value = tiradaMaquina()
+                        partidasJugadas++
                     }
             )
 
+            // Imagen de las tijeras
             Image(
                 painter = painterResource(id = R.drawable.tijeras),
                 contentDescription = "Tijeras",
@@ -216,6 +242,7 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
                     .clickable {
                         jugador.value = 3
                         maquina.value = tiradaMaquina()
+                        partidasJugadas++
                     }
             )
 
@@ -223,6 +250,7 @@ fun Mandos(winsUsu:Int, winsMaquina:Int) {
     }
 }
 
+//Funcion que devuelve un numero aleatorio entre 1 y 3 para la tirada de la maquina
 fun tiradaMaquina():Int {
     var movimiento= 0
     val list= listOf(1, 2, 3)
