@@ -25,7 +25,7 @@ fun Log() {
         verticalArrangement = Arrangement.SpaceBetween
     ){
         Row {
-            OutlinedTextField(value = "", onValueChange = "")
+            OutlinedTextField(value = "Usuario", onValueChange = "")
         }
     }
 }
