@@ -1,14 +1,9 @@
-﻿namespace LasPlacas
+namespace LasPlacas.Views;
+
+public partial class Login : ContentPage
 {
-    public partial class MainPage : ContentPage
-    {
-        int count = 0;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        
-    }
+	public Login()
+	{
+		InitializeComponent();
+	}
 }

@@ -217,7 +217,6 @@ C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1123.42427.dll
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -322,3 +321,4 @@ C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\obj\Debug\net7.0
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\github\segundo\interfaces\tema 6\EjerciciosT6\EjerciciosT6E1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1323.51816.dll

@@ -1,58 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LasPlacas.MainPage">
+             x:Class="LasPlacas.Views.Login"
+             Title="Login">
 
     <Grid>
 
         <Image x:Name="imgFondo1" 
-               Source="placas1.png"
-               Grid.RowSpan="2"
-               HorizontalOptions="Fill"
-               Aspect="AspectFill"/>
+           Source="placas1.png"
+           Grid.RowSpan="2"
+           HorizontalOptions="Fill"
+           Aspect="AspectFill"/>
 
         <Label x:Name="lblNomEmpresa"
-               Text="Solar Power"
-               TextColor="White"
-               Margin="0,131,0,0"
-               HorizontalOptions="Center"
-               FontSize="Title"/>
+           Text="Solar Power"
+           TextColor="White"
+           Margin="0,131,0,0"
+           HorizontalOptions="Center"
+           FontSize="Title"/>
 
         <VerticalStackLayout
-            HeightRequest="300" 
-            VerticalOptions="Center" 
-            WidthRequest="400" 
-            HorizontalOptions="Center">
+        HeightRequest="300" 
+        VerticalOptions="Center" 
+        WidthRequest="400" 
+        HorizontalOptions="Center">
 
             <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10">
                 <Entry x:Name="NombreUsuario"
-                    Placeholder="Usuario"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    HorizontalOptions="Center"
-                    WidthRequest="300"/>
+                Placeholder="Usuario"
+                VerticalOptions="Center"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                WidthRequest="300"/>
             </Border>
 
             <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10" Margin="20">
                 <Entry x:Name="Contraseña"
-                    Placeholder="Contraseña"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                       BackgroundColor="White"
-                    WidthRequest="300"/>
+                Placeholder="Contraseña"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                   BackgroundColor="White"
+                WidthRequest="300"/>
             </Border>
 
             <Button x:Name="btnLogIn"
-                Text="Log In"
-                WidthRequest="75"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                BackgroundColor="#4E6694"
-                TextColor="White"/>
+            Text="Log In"
+            WidthRequest="75"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="#4E6694"
+            TextColor="White"/>
 
         </VerticalStackLayout>
 
     </Grid>
-
 </ContentPage>
-
