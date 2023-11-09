@@ -20,36 +20,40 @@
            FontSize="Title"/>
 
         <VerticalStackLayout
-        HeightRequest="300" 
-        VerticalOptions="Center" 
-        WidthRequest="400" 
-        HorizontalOptions="Center">
+            HeightRequest="300" 
+            VerticalOptions="Center" 
+            WidthRequest="400" 
+            HorizontalOptions="Center">
 
             <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10">
                 <Entry x:Name="NombreUsuario"
-                Placeholder="Usuario"
-                VerticalOptions="Center"
-                BackgroundColor="White"
-                HorizontalOptions="Center"
-                WidthRequest="300"/>
+                    Placeholder="Usuario"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    TextColor="Black"/>
             </Border>
 
             <Border Stroke="Yellow" StrokeThickness="1" WidthRequest="300" StrokeShape="RoundRectangle 10" Margin="20">
                 <Entry x:Name="Contraseña"
-                Placeholder="Contraseña"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                   BackgroundColor="White"
-                WidthRequest="300"/>
+                    Placeholder="Contraseña"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="White"
+                    WidthRequest="300"
+                    TextColor="Black"
+                       />
             </Border>
 
             <Button x:Name="btnLogIn"
-            Text="Log In"
-            WidthRequest="75"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            BackgroundColor="#4E6694"
-            TextColor="White"/>
+                Text="Log In"
+                WidthRequest="75"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="#4E6694"
+                TextColor="White"
+                Clicked="inicioSesion"/>
 
         </VerticalStackLayout>
 

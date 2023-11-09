@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LasTablas.Views.Menú"
+             xmlns:local="clr-namespace:LasPlacas.Views"
+             Title="Menú"
+            BarBackground="LightBlue"
+            BarBackgroundColor="Black"
+            BarTextColor="Red"
+            SelectedTabColor="Yellow"
+            UnselectedTabColor="AntiqueWhite">
+
+    <local:Pendientes></local:Pendientes>
+    <local:Completados></local:Completados>
+
+    </TabbedPage>

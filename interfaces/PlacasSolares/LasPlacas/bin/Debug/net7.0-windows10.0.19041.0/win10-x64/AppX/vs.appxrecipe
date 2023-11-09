@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-08T18:38:32.978</Modified>
+      <Modified>2023-11-08T20:51:42.292</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-08T18:38:32.666</Modified>
+      <Modified>2023-11-08T20:50:02.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LasPlacas.runtimeconfig.json">
       <PackagePath>LasPlacas.runtimeconfig.json</PackagePath>
@@ -43,15 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LasPlacas.dll">
       <PackagePath>LasPlacas.dll</PackagePath>
-      <Modified>2023-11-08T18:38:31.355</Modified>
+      <Modified>2023-11-08T20:51:41.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LasPlacas.exe</PackagePath>
-      <Modified>2023-11-08T18:38:31.374</Modified>
+      <Modified>2023-11-08T20:51:41.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\LasPlacas.deps.json">
       <PackagePath>LasPlacas.deps.json</PackagePath>
-      <Modified>2023-11-08T18:38:32.459</Modified>
+      <Modified>2023-11-08T20:36:06.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\isaac\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -967,207 +967,207 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-11-07T19:25:30.590</Modified>
+      <Modified>2023-11-08T20:45:04.219</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.942</Modified>
+      <Modified>2023-11-08T20:45:04.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.956</Modified>
+      <Modified>2023-11-08T20:45:04.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.972</Modified>
+      <Modified>2023-11-08T20:45:04.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.998</Modified>
+      <Modified>2023-11-08T20:45:04.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:31.127</Modified>
+      <Modified>2023-11-08T20:45:04.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.686</Modified>
+      <Modified>2023-11-08T20:45:04.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.690</Modified>
+      <Modified>2023-11-08T20:45:04.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.709</Modified>
+      <Modified>2023-11-08T20:45:04.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.695</Modified>
+      <Modified>2023-11-08T20:45:04.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.700</Modified>
+      <Modified>2023-11-08T20:45:04.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.661</Modified>
+      <Modified>2023-11-08T20:45:04.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.665</Modified>
+      <Modified>2023-11-08T20:45:04.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.683</Modified>
+      <Modified>2023-11-08T20:45:04.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.669</Modified>
+      <Modified>2023-11-08T20:45:04.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.673</Modified>
+      <Modified>2023-11-08T20:45:04.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.602</Modified>
+      <Modified>2023-11-08T20:45:04.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.607</Modified>
+      <Modified>2023-11-08T20:45:04.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.612</Modified>
+      <Modified>2023-11-08T20:45:04.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.618</Modified>
+      <Modified>2023-11-08T20:45:04.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.626</Modified>
+      <Modified>2023-11-08T20:45:04.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.630</Modified>
+      <Modified>2023-11-08T20:45:04.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.635</Modified>
+      <Modified>2023-11-08T20:45:04.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.657</Modified>
+      <Modified>2023-11-08T20:45:04.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.640</Modified>
+      <Modified>2023-11-08T20:45:04.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.645</Modified>
+      <Modified>2023-11-08T20:45:04.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.784</Modified>
+      <Modified>2023-11-08T20:45:04.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.791</Modified>
+      <Modified>2023-11-08T20:45:04.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.798</Modified>
+      <Modified>2023-11-08T20:45:04.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.808</Modified>
+      <Modified>2023-11-08T20:45:04.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.826</Modified>
+      <Modified>2023-11-08T20:45:04.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.744</Modified>
+      <Modified>2023-11-08T20:45:04.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.748</Modified>
+      <Modified>2023-11-08T20:45:04.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.753</Modified>
+      <Modified>2023-11-08T20:45:04.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.760</Modified>
+      <Modified>2023-11-08T20:45:04.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.776</Modified>
+      <Modified>2023-11-08T20:45:04.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.713</Modified>
+      <Modified>2023-11-08T20:45:04.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.718</Modified>
+      <Modified>2023-11-08T20:45:04.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.723</Modified>
+      <Modified>2023-11-08T20:45:04.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.729</Modified>
+      <Modified>2023-11-08T20:45:04.332</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.739</Modified>
+      <Modified>2023-11-08T20:45:04.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.834</Modified>
+      <Modified>2023-11-08T20:45:04.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.842</Modified>
+      <Modified>2023-11-08T20:45:04.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.852</Modified>
+      <Modified>2023-11-08T20:45:04.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.871</Modified>
+      <Modified>2023-11-08T20:45:04.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.930</Modified>
+      <Modified>2023-11-08T20:45:04.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.557</Modified>
+      <Modified>2023-11-08T20:45:04.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.570</Modified>
+      <Modified>2023-11-08T20:45:04.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.587</Modified>
+      <Modified>2023-11-08T20:45:04.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.620</Modified>
+      <Modified>2023-11-08T20:45:04.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-11-07T19:25:30.700</Modified>
+      <Modified>2023-11-08T20:45:04.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placas1.scale-100">
       <PackagePath>placas1.scale-100</PackagePath>
@@ -1176,6 +1176,10 @@
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placas1.scale-100.png">
       <PackagePath>placas1.scale-100.png</PackagePath>
       <Modified>2023-11-07T19:25:26.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\volver.scale-100.png">
+      <PackagePath>volver.scale-100.png</PackagePath>
+      <Modified>2023-11-08T20:42:41.786</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

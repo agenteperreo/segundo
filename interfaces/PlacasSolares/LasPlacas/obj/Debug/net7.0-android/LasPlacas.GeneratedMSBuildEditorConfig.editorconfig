@@ -32,8 +32,26 @@ build_metadata.AdditionalFiles.ManifestResourceName = LasPlacas.Resources.Styles
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/github/segundo/interfaces/PlacasSolares/LasPlacas/Views/Completados.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LasPlacas.Views.Completados.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Completados.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Completados.xaml
+
 [C:/github/segundo/interfaces/PlacasSolares/LasPlacas/Views/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LasPlacas.Views.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
+
+[C:/github/segundo/interfaces/PlacasSolares/LasPlacas/Views/Menú.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LasPlacas.Views.Menú.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Menú.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Menú.xaml
+
+[C:/github/segundo/interfaces/PlacasSolares/LasPlacas/Views/Pendientes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LasPlacas.Views.Pendientes.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pendientes.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pendientes.xaml
