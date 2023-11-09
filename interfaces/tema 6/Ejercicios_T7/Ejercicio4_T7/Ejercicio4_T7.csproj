@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.ejercicio4_t7</ApplicationId>
-		<ApplicationIdGuid>f8e70681-e955-4860-bdbd-63b4d0fcb0d9</ApplicationIdGuid>
+		<ApplicationIdGuid>16749e43-4108-470d-9143-cb034c6ed216</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -53,15 +53,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\ContactsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\FlyoutMenuPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\FlyoutPageNavigation.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <Compile Update="FlyoutMenuPage.xaml.cs">
+	    <DependentUpon>FlyoutMenuPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>
