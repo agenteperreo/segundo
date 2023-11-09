@@ -4,11 +4,39 @@
              x:Class="Ejercicio4_T7.FlyoutMenuPage"
              Title="FlyoutMenuPage">
 
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-    
+    <CollectionView x:Name="collectionView"
+                    x:FieldModifier="public"
+                    SelectionMode="Single">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type local:FlyoutPageItem}">
+                <local:FlyoutPageItem Title="Contacts"
+                                      IconSource="contacts.png"
+                                      TargetType="{x:Type local:ContactsPage}" />
+                <local:FlyoutPageItem Title="TodoList"
+                                      IconSource="todo.png"
+                                      TargetType="{x:Type local:TodoListPage }" />
+                <local:FlyoutPageItem Title="Reminders"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:ReminderPage}" />
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="5,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding IconSource}" />
+                    <Label Grid.Column="1"
+                           Margin="20,0"
+                           Text="{Binding Title}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
 </ContentPage>

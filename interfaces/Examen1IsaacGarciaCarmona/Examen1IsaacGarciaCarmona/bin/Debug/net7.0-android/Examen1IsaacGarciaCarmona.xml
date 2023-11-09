@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Examen1IsaacGarciaCarmona</name>
+    </assembly>
+    <members>
+        <member name="M:Examen1IsaacGarciaCarmona.MainPage.TapEspalda(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que al detectar el tap en la espalda del perro cambia la opacidad de ambas elipses de ambas imagenes a 100.
+            Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Examen1IsaacGarciaCarmona.MainPage.TapHueso(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que al detectar el tap en el hueso del cacharro de la comida cambia la opacidad de ambas elipses de ambas imagenes a 100.
+            Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Examen1IsaacGarciaCarmona.MainPage.TapCasita(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que al detectar el tap en la casita del perro cambia la opacidad de ambas elipses de ambas imagenes a 100.
+            Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Examen1IsaacGarciaCarmona.MainPage.TapImagen(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para detectar los clicks en la imagen y que salte un popup co el error. Si se equivoca 3 veces salta un error definitivo y se cierra o reinicia el juego
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

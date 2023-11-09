@@ -3,39 +3,156 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Examen1IsaacGarciaCarmona.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <AbsoluteLayout
+        Padding="30,0"
+        VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+        <!--Primera imagen-->
+        <Image x:Name="Imagen1"
+               Source="imagen1.jpg"
+               WidthRequest="300"
+               AbsoluteLayout.LayoutBounds="0.15, 0.5, 0.5, 0.5" 
+               AbsoluteLayout.LayoutFlags="All">
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <!--Etiqueta que llama a la funcion de TapImagen del codigo back cuando tocas sobre la imagen-->
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapImagen"
+                          NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+        <!--"Circulo" que rodea la diferencia de la espalda en la primera imagen-->
+            <Border x:Name="bdrEspalda" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    WidthRequest="70" 
+                    HeightRequest="100" 
+                    StrokeShape="RoundRectangle 20" 
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="0.15, 1, 0.775, 0.975" 
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Label x:Name="circuloEspalda">
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                    <!--Etiqueta que llama a la funcion de TapEspalda del codigo back cuando tocas sobre la espalda del perro-->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEspalda"
+                              NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
 
-        </VerticalStackLayout>
-    </ScrollView>
+            <!--"Circulo" que rodea la diferencia del hueso que falta en el comedero en la primera imagen-->
+            <Border x:Name="bdrHueso" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    WidthRequest="70" 
+                    HeightRequest="70" 
+                    StrokeShape="RoundRectangle 20" 
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="0.15, 1, 0.61, 1.352" 
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Label x:Name="circuloHueso">
+                    <!--Etiqueta que llama a la funcion de TapHueso del codigo back cuando tocas sobre el hueso que falta del comedero -->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapHueso"
+                      NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
 
+            <!--"Circulo" que rodea la diferencia de la casita del perro en la primera imagen-->
+        <Border x:Name="bdrCasita" 
+                Stroke="Red" 
+                StrokeThickness="2" 
+                WidthRequest="100" 
+                HeightRequest="100" 
+                StrokeShape="RoundRectangle 20" 
+                Opacity="0"
+                AbsoluteLayout.LayoutBounds="0.15, 1, 0.475, 0.95" 
+                AbsoluteLayout.LayoutFlags="SizeProportional">
+            <Label x:Name="circuloCasa">
+                <!--Etiqueta que llama a la funcion de TapCasita del codigo back cuando tocas sobre la imagen-->
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapCasita"
+                  NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Border>
+
+
+
+        <!--Segunda imagen-->
+        <Image x:Name="Imagen2"
+               Source="imagen2.jpg"
+               WidthRequest="300"
+               AbsoluteLayout.LayoutBounds="0.8, 1, 0.5, 1" 
+                 AbsoluteLayout.LayoutFlags="All">
+
+            <!--Etiqueta que llama a la funcion de TapImagen del codigo back cuando tocas sobre la imagen-->
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapImagen"
+                                      NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+            <!--"Circulo" que rodea la diferencia de la espalda en la segunda imagen-->
+            <Border x:Name="bdrEspalda2" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    WidthRequest="70" 
+                    HeightRequest="100" 
+                    StrokeShape="RoundRectangle 20" 
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="0.8, 1, 1.425, 0.975" 
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Label x:Name="circuloEspalda2">
+                    <!--Etiqueta que llama a la funcion de TapEspalda del codigo back cuando tocas sobre la espalda del perro-->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEspalda"
+                              NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+
+            <!--"Circulo" que rodea la diferencia del hueso que falta en el comedero en la segunda imagen-->
+            <Border x:Name="bdrHueso2" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    WidthRequest="70" 
+                    HeightRequest="70" 
+                    StrokeShape="RoundRectangle 20"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="0.8, 1, 1.26, 1.350" 
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Label x:Name="circuloHueso2">
+                    <!--Etiqueta que llama a la funcion de TapHueso del codigo back cuando tocas sobre el hueso que falta del comedero -->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapHueso"
+                  NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+
+            <!--"Circulo" que rodea la diferencia de la casita del perro en la segunda imagen-->
+            <Border x:Name="bdrCasita2" 
+                    Stroke="Red" 
+                    StrokeThickness="2" 
+                    WidthRequest="100" 
+                    HeightRequest="100" 
+                    StrokeShape="RoundRectangle 20" 
+                    Opacity="0"
+                    AbsoluteLayout.LayoutBounds="0.8, 1, 1.12, 0.95" 
+                    AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Label x:Name="circuloCasa2">
+                    <!--Etiqueta que llama a la funcion de TapCasita del codigo back cuando tocas sobre la imagen-->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapCasita"
+                                              NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+
+    </AbsoluteLayout>
 </ContentPage>

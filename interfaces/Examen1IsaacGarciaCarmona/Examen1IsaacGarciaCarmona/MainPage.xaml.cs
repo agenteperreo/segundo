@@ -4,21 +4,149 @@
     {
         int count = 0;
 
+        #region Inicialización del XAML
         public MainPage()
         {
             InitializeComponent();
         }
+        #endregion
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        #region Metodos
+        /// <summary>
+        /// Metodo que al detectar el tap en la espalda del perro cambia la opacidad de ambas elipses de ambas imagenes a 100.
+        /// Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void TapEspalda(object sender, EventArgs e)
         {
+            bdrEspalda.Opacity = 1;
+            bdrEspalda2.Opacity = 1;
+
+            if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
+            {
+                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
+
+                if (respuesta)
+                {
+                    bdrEspalda.Opacity = 0;
+                    bdrEspalda2.Opacity = 0;
+                    bdrHueso.Opacity = 0;
+                    bdrHueso2.Opacity = 0;
+                    bdrCasita.Opacity = 0;
+                    bdrCasita2.Opacity = 0;
+
+                    count = 0;
+                }
+                else
+                {
+                    Application.Current.Quit();
+                }
+
+            }
+        }
+
+        /// <summary>
+        /// Metodo que al detectar el tap en el hueso del cacharro de la comida cambia la opacidad de ambas elipses de ambas imagenes a 100.
+        /// Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void TapHueso(object sender, EventArgs e)
+        {
+            bdrHueso.Opacity = 1;
+            bdrHueso2.Opacity = 1;
+
+            if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
+            {
+                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
+
+                if (respuesta)
+                {
+                    bdrEspalda.Opacity = 0;
+                    bdrEspalda2.Opacity = 0;
+                    bdrHueso.Opacity = 0;
+                    bdrHueso2.Opacity = 0;
+                    bdrCasita.Opacity = 0;
+                    bdrCasita2.Opacity = 0;
+
+                    count = 0;
+                }
+                else
+                {
+                    Application.Current.Quit();
+                }
+
+            }
+        }
+
+        /// <summary>
+        /// Metodo que al detectar el tap en la casita del perro cambia la opacidad de ambas elipses de ambas imagenes a 100.
+        /// Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void TapCasita(object sender, EventArgs e)
+        {
+            bdrCasita.Opacity = 1;
+            bdrCasita2.Opacity = 1;
+
+            if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
+            {
+                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
+
+                if(respuesta)
+                {
+                    bdrEspalda.Opacity = 0;
+                    bdrEspalda2.Opacity = 0;
+                    bdrHueso.Opacity = 0;
+                    bdrHueso2.Opacity = 0;
+                    bdrCasita.Opacity = 0;
+                    bdrCasita2.Opacity = 0;
+
+                    count = 0;
+
+                } else
+                {
+                    Application.Current.Quit();
+                }
+                
+            }
+        }
+
+        /// <summary>
+        /// Metodo para detectar los clicks en la imagen y que salte un popup co el error. Si se equivoca 3 veces salta un error definitivo y se cierra o reinicia el juego
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void TapImagen(object sender, EventArgs e)
+        {
+            await DisplayAlert("Fallo", "ERROR: Click falso\nIntentos restantes: "+(3-(count+1)), "OK");
+
             count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            if (count == 3) 
+            {
+                bool respuesta = await DisplayAlert("Derrota", "Has gastado todos tus clicks.\n¿Quieres jugar de nuevo?", "Si", "No");
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+                if(respuesta)
+                {
+                    count = 0;
+
+                    bdrEspalda.Opacity = 0;
+                    bdrEspalda2.Opacity = 0;
+                    bdrHueso.Opacity = 0;
+                    bdrHueso2.Opacity = 0;
+                    bdrCasita.Opacity = 0;
+                    bdrCasita2.Opacity = 0;
+                } else
+                {
+                    Application.Current.Quit();
+                }
+                
+            }
         }
+        #endregion
+
     }
 }
