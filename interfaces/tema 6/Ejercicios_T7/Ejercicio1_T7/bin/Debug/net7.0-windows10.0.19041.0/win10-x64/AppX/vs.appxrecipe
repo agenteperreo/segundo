@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-19T11:16:33.831</Modified>
+      <Modified>2023-11-09T07:51:43.943</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-19T11:08:20.549</Modified>
+      <Modified>2023-11-09T07:51:43.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio1_T7.runtimeconfig.json">
       <PackagePath>Ejercicio1_T7.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-19T10:07:48.033</Modified>
+      <Modified>2023-11-09T07:51:43.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio1_T7.dll">
       <PackagePath>Ejercicio1_T7.dll</PackagePath>
-      <Modified>2023-10-19T11:16:32.841</Modified>
+      <Modified>2023-11-09T07:51:41.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ejercicio1_T7.exe</PackagePath>
-      <Modified>2023-10-19T11:16:32.855</Modified>
+      <Modified>2023-11-09T07:51:41.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio1_T7.deps.json">
       <PackagePath>Ejercicio1_T7.deps.json</PackagePath>
-      <Modified>2023-10-19T11:08:20.360</Modified>
+      <Modified>2023-11-09T07:51:43.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\igarcia\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -920,6 +920,10 @@
     <AppxPackagedFile Include="C:\Users\igarcia\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\tema 6\Ejercicios_T7\BibliotecaDeClases\bin\Debug\net7.0\BibliotecaDeClases.dll">
+      <PackagePath>BibliotecaDeClases.dll</PackagePath>
+      <Modified>2023-11-09T07:51:34.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.96\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

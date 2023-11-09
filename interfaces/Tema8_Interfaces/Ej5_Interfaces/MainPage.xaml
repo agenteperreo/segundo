@@ -9,6 +9,23 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <ListView x:Name="personasListView" ItemsSource="{Binding Personas}" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <HorizontalStackLayout Margin="0, 0, 0, 10">
+                                <Label x:Name="lblNombre"
+                                Text="{Binding Nombre}"
+                                       Margin="0, 0, 10, 0"/>
+
+                                <Label x:Name="lblApellidos"
+                                Text="{Binding Apellidos}"/>
+                            </HorizontalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -27,23 +44,6 @@
          CornerRadius="35" ImageSource="plus.png" HorizontalOptions="End" WidthRequest="50" HeightRequest="50" VerticalOptions="End" Margin="0, 0, 0, 20"/>
                 </StackLayout>
             </ScrollView>
-
-            <ListView x:Name="personasListView" ItemsSource="{Binding Personas}" HorizontalOptions="Center">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <HorizontalStackLayout Margin="0, 0, 0, 10">
-                                <Label x:Name="lblNombre"
-                                Text="{Binding Nombre}"
-                                       Margin="0, 0, 10, 0"/>
-
-                                <Label x:Name="lblApellidos"
-                                Text="{Binding Apellidos}"/>
-                            </HorizontalStackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
         </VerticalStackLayout>
     </ScrollView>
 

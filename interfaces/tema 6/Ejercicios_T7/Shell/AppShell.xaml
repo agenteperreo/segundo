@@ -6,9 +6,31 @@
     xmlns:local="clr-namespace:Shell"
     Shell.FlyoutBehavior="Disabled">
 
+    <FlyoutItem
+        FlyoutDisplayOptions="AsMultipleItems">
+        <Tab
+            Title="Miedo"
+            Icon="miedo.png">
+            <ShellContent
+                Title="Gore"
+                ContentTemplate="{DataTemplate views:GorePage}" />
+            <ShellContent
+                Title="Terror"
+                ContentTemplate="{DataTemplate views:TerrorPage}" />
+        </Tab>
+    </FlyoutItem>
+
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Aventura"
+        Icon="aventura.png"
+        ContentTemplate="{DataTemplate views:AventuraPage}" />
+    <ShellContent
+        Title="Comedia"
+        Icon="comedia.png"
+        ContentTemplate="{DataTemplate views:ComediaPage}" />
+    <ShellContent
+        Title="Romance"
+        Icon="romance.png"
+        ContentTemplate="{DataTemplate views:RomancePage}" />
 
 </Shell>

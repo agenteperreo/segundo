@@ -324,3 +324,5 @@ C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1223.47720.dll
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\youtube.scale-100.png
 C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bitcoin.scale-100.png
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\BibliotecaDeClases.dll
+C:\github\segundo\interfaces\tema 6\Ejercicios_T7\Ejercicio1_T7\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\BibliotecaDeClases.pdb
