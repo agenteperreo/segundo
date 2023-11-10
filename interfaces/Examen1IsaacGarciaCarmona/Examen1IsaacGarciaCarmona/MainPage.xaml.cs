@@ -34,42 +34,6 @@ namespace Examen1IsaacGarciaCarmona
         }
 
         /// <summary>
-        /// Metodo que al detectar el tap en el hueso del cacharro de la comida cambia la opacidad de ambas elipses de ambas imagenes a 100.
-        /// Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void TapHueso(object sender, EventArgs e)
-        {
-            bdrHueso.Opacity = 1;
-            bdrHueso2.Opacity = 1;
-
-            if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
-            {
-                FinalPartida("Victoria", "Has ganado\n¿Quieres seguir jugando?");
-
-            }
-        }
-
-        /// <summary>
-        /// Metodo que al detectar el tap en la casita del perro cambia la opacidad de ambas elipses de ambas imagenes a 100.
-        /// Comprueba si estan todas las diferencias marcadas, muestra un mensaje de victoria y las vuelve invisible otra vez
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void TapCasita(object sender, EventArgs e)
-        {
-            bdrCasita.Opacity = 1;
-            bdrCasita2.Opacity = 1;
-
-            if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
-            {
-                FinalPartida("Victoria", "Has ganado\n¿Quieres seguir jugando?");
-
-            }
-        }
-
-        /// <summary>
         /// Metodo para detectar los clicks en la imagen y que salte un popup co el error. Si se equivoca 3 veces salta un error definitivo y se cierra o reinicia el juego
         /// </summary>
         /// <param name="sender"></param>
