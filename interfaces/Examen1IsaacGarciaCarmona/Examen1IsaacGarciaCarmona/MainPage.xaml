@@ -118,7 +118,7 @@
                     WidthRequest="100" 
                     HeightRequest="100" 
                     BindingContext="{x:Reference bdrCasita}"
-                    Opacity="{Binding Path=Opacity, Mode=TwoWay}"
+                    Opacity="{Binding Path=Opacity, Mode=TwoWay }"
                     AbsoluteLayout.LayoutBounds="0.8, 1, 1.12, 0.95">
 
             <Ellipse.GestureRecognizers>
