@@ -1,4 +1,6 @@
-﻿namespace Examen1IsaacGarciaCarmona
+﻿using Microsoft.Maui.Controls.Shapes;
+
+namespace Examen1IsaacGarciaCarmona
 {
     public partial class MainPage : ContentPage
     {
@@ -18,30 +20,15 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void TapEspalda(object sender, EventArgs e)
+        private async void TapEllipse(object sender, EventArgs e)
         {
-            bdrEspalda.Opacity = 1;
-            bdrEspalda2.Opacity = 1;
+            Ellipse ellipseGlobal = (Ellipse)sender;
+
+            ellipseGlobal.Opacity = 1;
 
             if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
             {
-                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
-
-                if (respuesta)
-                {
-                    bdrEspalda.Opacity = 0;
-                    bdrEspalda2.Opacity = 0;
-                    bdrHueso.Opacity = 0;
-                    bdrHueso2.Opacity = 0;
-                    bdrCasita.Opacity = 0;
-                    bdrCasita2.Opacity = 0;
-
-                    count = 0;
-                }
-                else
-                {
-                    Application.Current.Quit();
-                }
+                FinalPartida("Victoria", "Has ganado\n¿Quieres seguir jugando?");
 
             }
         }
@@ -59,23 +46,7 @@
 
             if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
             {
-                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
-
-                if (respuesta)
-                {
-                    bdrEspalda.Opacity = 0;
-                    bdrEspalda2.Opacity = 0;
-                    bdrHueso.Opacity = 0;
-                    bdrHueso2.Opacity = 0;
-                    bdrCasita.Opacity = 0;
-                    bdrCasita2.Opacity = 0;
-
-                    count = 0;
-                }
-                else
-                {
-                    Application.Current.Quit();
-                }
+                FinalPartida("Victoria", "Has ganado\n¿Quieres seguir jugando?");
 
             }
         }
@@ -93,24 +64,8 @@
 
             if (bdrCasita.Opacity == 1 && bdrEspalda.Opacity == 1 && bdrHueso.Opacity == 1)
             {
-                bool respuesta = await DisplayAlert("Victoria", "Felicidades has ganado\n¿Quieres seguir jugando?", "Si", "No");
+                FinalPartida("Victoria", "Has ganado\n¿Quieres seguir jugando?");
 
-                if(respuesta)
-                {
-                    bdrEspalda.Opacity = 0;
-                    bdrEspalda2.Opacity = 0;
-                    bdrHueso.Opacity = 0;
-                    bdrHueso2.Opacity = 0;
-                    bdrCasita.Opacity = 0;
-                    bdrCasita2.Opacity = 0;
-
-                    count = 0;
-
-                } else
-                {
-                    Application.Current.Quit();
-                }
-                
             }
         }
 
@@ -127,25 +82,38 @@
 
             if (count == 3) 
             {
-                bool respuesta = await DisplayAlert("Derrota", "Has gastado todos tus clicks.\n¿Quieres jugar de nuevo?", "Si", "No");
-
-                if(respuesta)
-                {
-                    count = 0;
-
-                    bdrEspalda.Opacity = 0;
-                    bdrEspalda2.Opacity = 0;
-                    bdrHueso.Opacity = 0;
-                    bdrHueso2.Opacity = 0;
-                    bdrCasita.Opacity = 0;
-                    bdrCasita2.Opacity = 0;
-                } else
-                {
-                    Application.Current.Quit();
-                }
+                FinalPartida("Derrota", "Has gastado tus clicks\n¿Quieres seguir jugando?");
                 
             }
         }
+
+        /// <summary>
+        /// Metodo que controla el final de la partida
+        /// </summary>
+        /// <param name="titulo"></param>
+        /// <param name="mensaje"></param>
+        private async void FinalPartida(String titulo, String mensaje)
+        {
+            bool respuesta = await DisplayAlert(titulo, mensaje, "Si", "No");
+
+            if (respuesta)
+            {
+                count = 0;
+
+                bdrEspalda.Opacity = 0;
+                bdrEspalda2.Opacity = 0;
+                bdrHueso.Opacity = 0;
+                bdrHueso2.Opacity = 0;
+                bdrCasita.Opacity = 0;
+                bdrCasita2.Opacity = 0;
+            }
+            else
+            {
+                Application.Current.Quit();
+            }
+        }
+
+
         #endregion
 
     }

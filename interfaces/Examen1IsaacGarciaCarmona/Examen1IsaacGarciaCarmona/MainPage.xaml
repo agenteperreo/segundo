@@ -5,14 +5,12 @@
 
     <AbsoluteLayout
         Padding="30,0"
-        VerticalOptions="Center">
+        VerticalOptions="Start">
 
         <!--Primera imagen-->
         <Image x:Name="Imagen1"
                Source="imagen1.jpg"
-               WidthRequest="300"
-               AbsoluteLayout.LayoutBounds="0.15, 0.5, 0.5, 0.5" 
-               AbsoluteLayout.LayoutFlags="All">
+               AbsoluteLayout.LayoutBounds="0, 0, 300, 300">
 
             <!--Etiqueta que llama a la funcion de TapImagen del codigo back cuando tocas sobre la imagen-->
             <Image.GestureRecognizers>
@@ -22,24 +20,17 @@
         </Image>
 
         <!--"Circulo" que rodea la diferencia de la espalda en la primera imagen-->
-            <Border x:Name="bdrEspalda" 
+        <Ellipse x:Name="bdrEspalda" 
                     Stroke="Red" 
                     StrokeThickness="2" 
-                    WidthRequest="70" 
-                    HeightRequest="100" 
-                    StrokeShape="RoundRectangle 20" 
-                    Opacity="0"
-                    AbsoluteLayout.LayoutBounds="0.15, 1, 0.775, 0.975" 
-                    AbsoluteLayout.LayoutFlags="SizeProportional">
-                <Label x:Name="circuloEspalda">
+                    Opacity="1"
+                    AbsoluteLayout.LayoutBounds="60, 60, 60, 60" >
 
-                    <!--Etiqueta que llama a la funcion de TapEspalda del codigo back cuando tocas sobre la espalda del perro-->
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapEspalda"
-                              NumberOfTapsRequired="1"/>
-                    </Label.GestureRecognizers>
-                </Label>
-            </Border>
+            <Ellipse.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapEllipse"
+                    NumberOfTapsRequired="1"/>
+            </Ellipse.GestureRecognizers>
+        </Ellipse>
 
             <!--"Circulo" que rodea la diferencia del hueso que falta en el comedero en la primera imagen-->
             <Border x:Name="bdrHueso" 
@@ -84,9 +75,7 @@
         <!--Segunda imagen-->
         <Image x:Name="Imagen2"
                Source="imagen2.jpg"
-               WidthRequest="300"
-               AbsoluteLayout.LayoutBounds="0.8, 1, 0.5, 1" 
-                 AbsoluteLayout.LayoutFlags="All">
+               AbsoluteLayout.LayoutBounds="310, 0, 300, 300" >
 
             <!--Etiqueta que llama a la funcion de TapImagen del codigo back cuando tocas sobre la imagen-->
             <Image.GestureRecognizers>
@@ -98,23 +87,21 @@
 
 
             <!--"Circulo" que rodea la diferencia de la espalda en la segunda imagen-->
-            <Border x:Name="bdrEspalda2" 
+            <Ellipse x:Name="bdrEspalda2" 
                     Stroke="Red" 
                     StrokeThickness="2" 
                     WidthRequest="70" 
-                    HeightRequest="100" 
-                    StrokeShape="RoundRectangle 20" 
-                    Opacity="0"
+                    HeightRequest="70" 
+                    BindingContext="{x:Reference bdrEspalda}"
+                    Opacity="{Binding Path=Opacity, Mode=TwoWay}"
                     AbsoluteLayout.LayoutBounds="0.8, 1, 1.425, 0.975" 
                     AbsoluteLayout.LayoutFlags="SizeProportional">
-                <Label x:Name="circuloEspalda2">
-                    <!--Etiqueta que llama a la funcion de TapEspalda del codigo back cuando tocas sobre la espalda del perro-->
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapEspalda"
-                              NumberOfTapsRequired="1"/>
-                    </Label.GestureRecognizers>
-                </Label>
-            </Border>
+
+            <Ellipse.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapEllipse"
+                    NumberOfTapsRequired="1"/>
+            </Ellipse.GestureRecognizers>
+        </Ellipse>
 
             <!--"Circulo" que rodea la diferencia del hueso que falta en el comedero en la segunda imagen-->
             <Border x:Name="bdrHueso2" 
