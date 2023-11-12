@@ -1,0 +1,11 @@
+C:\github\segundo\interfaces\PlacasSolares\Objetos\bin\Debug\net7.0\Objetos.deps.json
+C:\github\segundo\interfaces\PlacasSolares\Objetos\bin\Debug\net7.0\Objetos.dll
+C:\github\segundo\interfaces\PlacasSolares\Objetos\bin\Debug\net7.0\Objetos.pdb
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.AssemblyInfoInputs.cache
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.AssemblyInfo.cs
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.csproj.CoreCompileInputs.cache
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.dll
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\refint\Objetos.dll
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\Objetos.pdb
+C:\github\segundo\interfaces\PlacasSolares\Objetos\obj\Debug\net7.0\ref\Objetos.dll

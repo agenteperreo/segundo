@@ -9,6 +9,6 @@ public partial class Login : ContentPage
 
 	private async void inicioSesion(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new Menú());
+		await Navigation.PushAsync(new Menu());
 	}
 }
