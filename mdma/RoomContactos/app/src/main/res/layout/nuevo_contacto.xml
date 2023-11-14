@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNewContact"
+        android:layout_width="164dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/coustard"
+        android:text="Nuevo Contacto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374"
+        android:hint="123456789"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/entryNombreCompleto"
+        android:layout_width="211dp"
+        android:layout_height="39dp"
+        android:hint="Antonio Fernandez"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/entryGenero"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:hint="H o M"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="495dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
