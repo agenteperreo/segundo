@@ -15,9 +15,9 @@ namespace Tema7SGE.Models.DAL
         { 
             List<clsPersona> listadoPersonas = new List<clsPersona>();
 
-            listadoPersonas.Add(new clsPersona("Pedro", "Cornejo", "987654321"));
-            listadoPersonas.Add(new clsPersona("Isa Katha", "Loetzer", "486217935"));
-            listadoPersonas.Add(new clsPersona("Paco", "Calvo", "159753684"));
+            listadoPersonas.Add(new clsPersona(1, "Pedro", "Cornejo", "987654321", 1));
+            listadoPersonas.Add(new clsPersona(2, "Isa Katha", "Loetzer", "486217935", 2));
+            listadoPersonas.Add(new clsPersona(3, "Paco", "Calvo", "159753684", 3));
 
             return listadoPersonas;
         }

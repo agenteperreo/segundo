@@ -14,6 +14,10 @@ namespace Tema7SGE.Models.ViewModels
         public EditarPersonaVM() 
         { 
             this.departamentos = listaDepartamento.listadoCompletoDepartamento();
+            this.nombre = "Pedro";
+            this.apellidos = "Cornejo";
+            this.telefono = "987654321";
+            this.idDept = 1;
         }
         #endregion
 

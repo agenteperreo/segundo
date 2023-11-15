@@ -5,7 +5,7 @@
 
         #region Propiedades
         public int idDept { get; set; }
-        public String nomDept { get; set; }
+        public string nomDept { get; set; }
         #endregion
 
         #region Constructores
@@ -15,7 +15,7 @@
             nomDept = "";
         }
 
-        public clsDepartamento(int idDept, String nomDept)
+        public clsDepartamento(int idDept, string nomDept)
         {
             this.idDept = idDept; 
             this.nomDept = nomDept;

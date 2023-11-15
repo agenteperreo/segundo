@@ -59,8 +59,15 @@ namespace Tema7SGE.Controllers
 
         public IActionResult editarPersona()
         {
-            return View(listaDepartamento.listadoCompletoDepartamento());
+            EditarPersonaVM objetoEditarPersona = new EditarPersonaVM();
+
+            return View(objetoEditarPersona);
         }
 
+        [HttpPost]
+        public IActionResult guardarPersona(clsPersona persona) 
+        {
+            return View();
+        }
     }
 }

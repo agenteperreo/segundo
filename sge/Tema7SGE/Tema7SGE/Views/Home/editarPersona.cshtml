@@ -1,3 +1,32 @@
-﻿@model Tema7SGE.Models.ViewModels.EditarPersonaVM
+﻿@using Tema7SGE.Models.Entidades;
+@using Tema7SGE.Models.DAL
+@model Tema7SGE.Models.ViewModels.EditarPersonaVM
 
+@{
+    ViewData["Title"] = "Editar persona";
+}
 
+<h1>Editar persona</h1>
+
+<form asp-action="guardarPersona">
+
+    <p><input type="hidden" name="Id" value="@Model.idPersona" />
+    <p>Nombre: @Html.TextBoxFor(model => model.nombre)</p>
+    <p>Apellidos: @Html.TextBoxFor(model => model.apellidos)</p>
+    <p>Telefono: @Html.TextBoxFor(model => model.telefono)</p>
+    <p>
+        <select>
+            @foreach(clsDepartamento departamento in listaDepartamento.listadoCompletoDepartamento())
+            {
+                if(Model.idDept == departamento.idDept)
+                {
+                        <option selected value="@departamento.idDept">@departamento.nomDept</option>
+                } else {
+                    <option value="@departamento.idDept">@departamento.nomDept</option>
+                }
+            }
+        </select>
+    </p>
+
+    <p><input type="submit" value="Editar persona"/></p>
+</form>
