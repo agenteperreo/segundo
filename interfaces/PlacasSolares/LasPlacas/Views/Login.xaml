@@ -7,14 +7,14 @@
     <Grid>
 
         <Image x:Name="imgFondo1" 
-           Source="placas1.png"
+           Source="placas34.png"
            Grid.RowSpan="2"
            HorizontalOptions="Fill"
            Aspect="AspectFill"/>
 
         <Label x:Name="lblNomEmpresa"
            Text="Solar Power"
-           TextColor="White"
+           TextColor="White"    
            Margin="0,131,0,0"
            HorizontalOptions="Center"
            FontSize="Title"/>

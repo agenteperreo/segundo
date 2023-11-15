@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LasPlacas.Views.Ubicación"
+             Title="Ubicación"
+             BackgroundColor="#8AEE94">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#8AEE94" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Image x:Name="imgUbicación" HeightRequest="600" WidthRequest="600" Source="ubcacion.png" VerticalOptions="Start" Margin="20"/>
+
+            <Border Stroke="#8AEE94" StrokeThickness="1" WidthRequest="300" HeightRequest="250" StrokeShape="RoundRectangle 15, 15, 15, 15">
+                <VerticalStackLayout WidthRequest="300" HeightRequest="250" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
+                    <Label x:Name="lblTitulo" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="20" FontAttributes="Bold" FontFamily="Sansation" WidthRequest="250"/>
+                    <Label x:Name="lblLineaDivisoria" Text="__________________________" WidthRequest="250" TextColor="#938383"/>
+                    <Button x:Name="btnHora" WidthRequest="75" BackgroundColor="#FFF8F8" Margin="30, 0, 0, 5" Text="11:50" TextColor="#EA3333" HorizontalOptions="Start"/>
+                    <VerticalStackLayout BackgroundColor="#8EB7F4">
+                        <Label x:Name="lblNombreCliente" Text="Miriam Sanchez Luna" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        <Label x:Name="lblTelefonoCliente" Text="+64 459 638 157" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        <Label x:Name="lbDireccionCliente" Text="Avenida Andalucia, 56" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                    </VerticalStackLayout>
+                    <Button x:Name="btnNavDetalles" BackgroundColor="#10BAAB" Text="Detalles" TextColor="White" WidthRequest="250" Margin="0, 10, 0, 0" Clicked="irDetalles"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

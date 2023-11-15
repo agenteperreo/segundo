@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LasPlacas</name>
+    </assembly>
+    <members>
+        <member name="M:LasPlacas.Views.Completados.irDetalles(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la vista de los detalles del trabajo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LasPlacas.Views.Completados.irUbicacion(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la vista de la ubicación del trabajo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LasPlacas.Views.Login.inicioSesion(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la pantalla de trabajos
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LasPlacas.Views.Pendientes.irDetalles(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la vista de detalles del trabajo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LasPlacas.Views.Pendientes.irUbicacion(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la vista de la ubicación del trabajo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LasPlacas.Views.Ubicación.irDetalles(System.Object,System.EventArgs)">
+            <summary>
+            Metodo para navegar a la vista de los detalles del trabajo
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

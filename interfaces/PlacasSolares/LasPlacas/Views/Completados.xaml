@@ -2,9 +2,83 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LasPlacas.Views.Completados"
-             Title="Completados">
-    <VerticalStackLayout
-        BackgroundColor="#8AEE94">
-       
-    </VerticalStackLayout>
+             Title="Completados"
+             BackgroundColor="#8AEE94">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#8AEE94">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border Stroke="#8AEE94" Margin="40" StrokeThickness="1" WidthRequest="300" HeightRequest="300" StrokeShape="RoundRectangle 15, 15, 15, 15"  Grid.Column="0" Grid.Row="0">
+                    <VerticalStackLayout WidthRequest="300" HeightRequest="300" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
+                        <Label x:Name="lblTitulo" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="20" FontAttributes="Bold" FontFamily="Sansation" WidthRequest="250"/>
+                        <Label x:Name="lblLineaDivisoria" Text="__________________________" WidthRequest="250" TextColor="#938383"/>
+                        <Button x:Name="btnHora" WidthRequest="75" BackgroundColor="#FFF8F8" Margin="30, 0, 0, 5" Text="11:50" TextColor="#EA3333" HorizontalOptions="Start"/>
+                        <VerticalStackLayout BackgroundColor="#8EB7F4">
+                            <Label x:Name="lblNombreCliente" Text="Miriam Sanchez Luna" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lblTelefonoCliente" Text="+64 459 638 157" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lbDireccionCliente" Text="Avenida Andalucia, 56" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        </VerticalStackLayout>
+                        <Button x:Name="btnNavDetalles1" BackgroundColor="#10BAAB" Text="Detalles" TextColor="White" WidthRequest="250" Margin="0, 10, 0, 0" Clicked="irDetalles"/>
+                        <Button x:Name="btnNavegarUbicacion1" BackgroundColor="White" Text="Ubicación" TextColor="Black"  WidthRequest="250" Margin="0, 10, 0, 20" Clicked="irUbicacion"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="#8AEE94" Margin="40" StrokeThickness="1" WidthRequest="300" HeightRequest="300" StrokeShape="RoundRectangle 15, 15, 15, 15" HorizontalOptions="End" VerticalOptions="Start" Grid.Column="1" Grid.Row="0">
+                    <VerticalStackLayout WidthRequest="300" HeightRequest="300" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
+                        <Label x:Name="lblTitulo2" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="20" FontAttributes="Bold" FontFamily="Sansation" WidthRequest="250"/>
+                        <Label x:Name="lblLineaDivisoria2" Text="__________________________" WidthRequest="250" TextColor="#938383"/>
+                        <Button x:Name="btnHora2" WidthRequest="75" BackgroundColor="#FFF8F8" Margin="30, 0, 0, 5" Text="11:50" TextColor="#EA3333" HorizontalOptions="Start"/>
+                        <VerticalStackLayout BackgroundColor="#8EB7F4">
+                            <Label x:Name="lblNombreCliente2" Text="Miriam Sanchez Luna" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lblTelefonoCliente2" Text="+64 459 638 157" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lbDireccionCliente2" Text="Avenida Andalucia, 56" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        </VerticalStackLayout>
+                        <Button x:Name="btnNavDetalles2" BackgroundColor="#10BAAB" Text="Detalles" TextColor="White" WidthRequest="250" Margin="0, 10, 0, 0" Clicked="irDetalles"/>
+                        <Button x:Name="btnNavegarUbicacion2" BackgroundColor="White" Text="Ubicación" TextColor="Black"  WidthRequest="250" Margin="0, 10, 0, 20" Clicked="irUbicacion"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="#8AEE94" Margin="40" StrokeThickness="1" WidthRequest="300" HeightRequest="300" StrokeShape="RoundRectangle 15, 15, 15, 15" HorizontalOptions="Start" VerticalOptions="End" Grid.Column="0" Grid.Row="1">
+                    <VerticalStackLayout WidthRequest="300" HeightRequest="300" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
+                        <Label x:Name="lblTitulo3" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="20" FontAttributes="Bold" FontFamily="Sansation" WidthRequest="250"/>
+                        <Label x:Name="lblLineaDivisoria3" Text="__________________________" WidthRequest="250" TextColor="#938383"/>
+                        <Button x:Name="btnHora3" WidthRequest="75" BackgroundColor="#FFF8F8" Margin="30, 0, 0, 5" Text="11:50" TextColor="#EA3333" HorizontalOptions="Start"/>
+                        <VerticalStackLayout BackgroundColor="#8EB7F4">
+                            <Label x:Name="lblNombreCliente3" Text="Miriam Sanchez Luna" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lblTelefonoCliente3" Text="+64 459 638 157" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lbDireccionCliente3" Text="Avenida Andalucia, 56" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        </VerticalStackLayout>
+                        <Button x:Name="btnNavDetalles3" BackgroundColor="#10BAAB" Text="Detalles" TextColor="White" WidthRequest="250" Margin="0, 10, 0, 0" Clicked="irDetalles"/>
+                        <Button x:Name="btnNavegarUbicacion3" BackgroundColor="White" Text="Ubicación" TextColor="Black"  WidthRequest="250" Margin="0, 10, 0, 20" Clicked="irUbicacion"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="#8AEE94" Margin="40" StrokeThickness="1" WidthRequest="300" HeightRequest="300" StrokeShape="RoundRectangle 15, 15, 15, 15" HorizontalOptions="End" VerticalOptions="End" Grid.Column="1" Grid.Row="1">
+                    <VerticalStackLayout WidthRequest="300" HeightRequest="300" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
+                        <Label x:Name="lblTitulo4" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="20" FontAttributes="Bold" FontFamily="Sansation" WidthRequest="250"/>
+                        <Label x:Name="lblLineaDivisoria4" Text="__________________________" WidthRequest="250" TextColor="#938383"/>
+                        <Button x:Name="btnHora4" WidthRequest="75" BackgroundColor="#FFF8F8" Margin="30, 0, 0, 5" Text="11:50" TextColor="#EA3333" HorizontalOptions="Start"/>
+                        <VerticalStackLayout BackgroundColor="#8EB7F4">
+                            <Label x:Name="lblNombreCliente4" Text="Miriam Sanchez Luna" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lblTelefonoCliente4" Text="+64 459 638 157" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                            <Label x:Name="lbDireccionCliente4" Text="Avenida Andalucia, 56" TextColor="#4F4F4F" FontSize="14" FontFamily="Quicksand" WidthRequest="250" BackgroundColor="#8EB7F4"/>
+                        </VerticalStackLayout>
+                        <Button x:Name="btnNavDetalles4" BackgroundColor="#10BAAB" Text="Detalles" TextColor="White" WidthRequest="250" Margin="0, 10, 0, 0" Clicked="irDetalles"/>
+                        <Button x:Name="btnNavegarUbicacion4" BackgroundColor="White" Text="Ubicación" TextColor="Black"  WidthRequest="250" Margin="0, 10, 0, 20" Clicked="irUbicacion"/>
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

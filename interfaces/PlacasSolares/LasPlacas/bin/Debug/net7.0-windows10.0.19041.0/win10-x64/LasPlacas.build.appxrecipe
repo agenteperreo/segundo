@@ -877,8 +877,26 @@
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placas1.scale-100.png">
-      <PackagePath>placas1.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagenpd.scale-100.png">
+      <PackagePath>imagenpd.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\mas.scale-100.png">
+      <PackagePath>mas.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placaestructura.scale-100.jpeg">
+      <PackagePath>placaestructura.scale-100.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placas34.scale-100.webp">
+      <PackagePath>placas34.scale-100.webp</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\placatecho.scale-100.jpeg">
+      <PackagePath>placatecho.scale-100.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\ubcacion.scale-100.png">
+      <PackagePath>ubcacion.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\ubicacion.scale-100.png">
+      <PackagePath>ubicacion.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\PlacasSolares\LasPlacas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\volver.scale-100.png">
       <PackagePath>volver.scale-100.png</PackagePath>
