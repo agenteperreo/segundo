@@ -1,0 +1,12 @@
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\bin\Debug\net8.0\Biblioteca.deps.json
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\bin\Debug\net8.0\Biblioteca.dll
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\bin\Debug\net8.0\Biblioteca.pdb
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfoInputs.cache
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfo.cs
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.csproj.CoreCompileInputs.cache
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.sourcelink.json
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.dll
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\refint\Biblioteca.dll
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\Biblioteca.pdb
+W:\github\segundo\interfaces\09_Ejercicios\Biblioteca\obj\Debug\net8.0\ref\Biblioteca.dll
