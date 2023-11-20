@@ -1,4 +1,4 @@
-package ejercicio5;
+package ejercicio5a;
 
 import java.io.File;
 import java.io.FileNotFoundException;
