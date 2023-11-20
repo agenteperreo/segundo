@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "Biblioteca/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Biblioteca.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Biblioteca.dll": {}
-        }
-      }
-    }
+    "net7.0": {}
   },
-  "libraries": {
-    "Biblioteca/1.0.0": {
-      "type": "project",
-      "path": "../Biblioteca/Biblioteca.csproj",
-      "msbuildProject": "../Biblioteca/Biblioteca.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "Biblioteca >= 1.0.0"
-    ]
+    "net7.0": []
   },
   "packageFolders": {
     "C:\\Users\\igarcia\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\ElMandaloriano\\ElMandaloriano.csproj",
-      "projectName": "ElMandaloriano",
-      "projectPath": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\ElMandaloriano\\ElMandaloriano.csproj",
+      "projectUniqueName": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\Biblioteca\\Biblioteca.csproj",
+      "projectName": "Biblioteca",
+      "projectPath": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\igarcia\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\ElMandaloriano\\obj\\",
+      "outputPath": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,11 +39,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\Biblioteca\\Biblioteca.csproj": {
-              "projectPath": "C:\\github\\segundo\\sge\\Mandalorian\\Mandalorian\\Biblioteca\\Biblioteca.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -86,9 +63,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

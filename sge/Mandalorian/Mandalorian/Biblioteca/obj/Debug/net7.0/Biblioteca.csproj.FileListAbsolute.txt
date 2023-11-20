@@ -1,0 +1,11 @@
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\bin\Debug\net7.0\Biblioteca.deps.json
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\bin\Debug\net7.0\Biblioteca.dll
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\bin\Debug\net7.0\Biblioteca.pdb
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.AssemblyInfoInputs.cache
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.AssemblyInfo.cs
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.dll
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\refint\Biblioteca.dll
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\Biblioteca.pdb
+C:\github\segundo\sge\Mandalorian\Mandalorian\Biblioteca\obj\Debug\net7.0\ref\Biblioteca.dll
