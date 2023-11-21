@@ -10,7 +10,11 @@ namespace ElMandaloriano.Models.ViewModels
         public List<clsMision> ListaMisiones { get; set; }
         #endregion
         #region Constructores
-        public IndexViewModel() { }
+        public IndexViewModel() 
+        {
+            this.Mision = new clsMision();
+            this.ListaMisiones = new List<clsMision>();
+        }
         public IndexViewModel(clsMision mision, List<clsMision> listaMisiones)
         {
             Mision = mision;

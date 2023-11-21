@@ -25,12 +25,19 @@ namespace ElMandaloriano.Controllers
             IndexViewModel ivm = new IndexViewModel(new clsMision(), clsListaMisiones.getListaCompletaMisiones());
             return View(ivm);
         }
+
+        /// <summary>
+        /// Le paso la id a la vista para buscarla mediante la id
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpPost]
-        public IActionResult Index(int IdMision)
+        public IActionResult Index(int Id, List<clsMision> listaMisiones)
         {   //Recibo de la vista el Id de la misión seleccionada, y le devuelvo la lista con la descripción de la misión.
             IndexViewModel ivm = new IndexViewModel();
             ivm.ListaMisiones = clsListaMisiones.getListaCompletaMisiones();
-            ivm.Mision = obtenerMision.obtenerMisionId(IdMision);
+           
+            ivm.Mision = obtenerMision.obtenerMisionId(Id, listaMisiones);
             return View(ivm);
         }
 
