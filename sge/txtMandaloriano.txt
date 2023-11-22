@@ -1,0 +1,36 @@
+Entidades
+	clsMision
+		id
+		nombreMision
+		descripcion
+		recompensa
+
+Controllers
+	HomeController
+		Index
+			return View(ivm)
+
+		[HTTP Post]
+		Index(int Id, List<clsMision>)
+			return View(ivm)
+		
+	
+Models
+	DAL
+		clsListaMisiones
+			List<clsMision> getListaCompletaMisiones()
+		obtenerMision
+			clsMision obtenerMisionId(int Id, List<clsMision> listaMisiones)
+				// Devuelve la mision con el id recibido por parametros
+	
+	VM
+		IndexViewModel
+			List<clsMision> ListaMisiones
+
+Views
+	Home
+		Index
+			//Mostrará una lista desplegable con las misiones y se mostrará 
+			la información de la mision elegida cuando se pulse un boton
+			
+			

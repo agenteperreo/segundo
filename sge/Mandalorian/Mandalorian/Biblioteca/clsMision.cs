@@ -6,6 +6,7 @@
         private int id;
         private string nombreMision;
         private string descripcion;
+        private string recompensa;
         #endregion
 
         #region Constructores
@@ -14,13 +15,15 @@
             id = 0;
             nombreMision = "";
             descripcion = "";
+            recompensa = "";
         }
 
-        public clsMision(int id, string nombreMision, string descripcion)
+        public clsMision(int id, string nombreMision, string descripcion, string recompensa)
         {
             this.id = id;
             this.nombreMision = nombreMision;
             this.descripcion = descripcion;
+            this.recompensa = recompensa;
         }
         #endregion
 
@@ -41,6 +44,12 @@
         { 
             get {  return descripcion; } 
             set {  descripcion = value; } 
+        }
+
+        public String Recompensa
+        {
+            get { return recompensa; }
+            set { recompensa = value; }
         }
         #endregion
     }

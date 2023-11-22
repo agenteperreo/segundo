@@ -18,8 +18,10 @@ namespace ElMandaloriano.Controllers
 
         /// <summary>
         /// Le paso a la vista una lista de las misiones, que he declarado antes del viewmodel antes para poder usarla en todo el controlador.
+        /// Precondición: Ninguna
+        /// Postcondición: Ninguna
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Un IndexViewModel con un objeto mision vacío y la lista de misiones</returns>
         public IActionResult Index()
         {
             IndexViewModel ivm = new IndexViewModel(new clsMision(), clsListaMisiones.getListaCompletaMisiones());
@@ -27,16 +29,18 @@ namespace ElMandaloriano.Controllers
         }
 
         /// <summary>
-        /// Le paso la id a la vista para buscarla mediante la id
+        /// Le paso un id y la lista de misiones y llama a la funcion obtenerMisionId par mandar una vista con la mision encontrada
+        /// Precondición: Que el id no sea 0
+        /// Postcondición: Ninguna
         /// </summary>
         /// <param name="Id"></param>
-        /// <returns></returns>
+        /// <param name="listaMisiones"></param>
+        /// <returns>Un indexViewModel con la mision encontrada y la lista de misiones completas</returns>
         [HttpPost]
         public IActionResult Index(int Id, List<clsMision> listaMisiones)
         {   //Recibo de la vista el Id de la misión seleccionada, y le devuelvo la lista con la descripción de la misión.
             IndexViewModel ivm = new IndexViewModel();
-            ivm.ListaMisiones = clsListaMisiones.getListaCompletaMisiones();
-           
+            ivm.ListaMisiones = clsListaMisiones.getListaCompletaMisiones(); 
             ivm.Mision = obtenerMision.obtenerMisionId(Id, listaMisiones);
             return View(ivm);
         }
