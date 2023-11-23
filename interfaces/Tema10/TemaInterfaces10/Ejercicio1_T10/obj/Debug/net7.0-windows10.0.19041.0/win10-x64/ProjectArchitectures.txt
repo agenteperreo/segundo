@@ -1,0 +1,1 @@
+C:\github\segundo\interfaces\Tema10\TemaInterfaces10\Ejercicio1_T10\Ejercicio1_T10.csproj;x64

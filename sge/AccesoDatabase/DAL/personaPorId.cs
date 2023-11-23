@@ -17,9 +17,9 @@ namespace DAL
         /// </summary>
         /// <param name="Id">int</param>
         /// <returns>devuelve uns clsMision</returns>
-        public static clsPersona obtenerPersonaId(int Id, List<clsPersona> listaPersonas)
+        public static clsPersona obtenerPersonaId(int Id)
         {
-            listaPersonas = clsListadoPersonas.listadoCompletoPersonas();
+            List<clsPersona> listaPersonas = clsListadoPersonas.listadoCompletoPersonas();
             return listaPersonas.Find(x => x.Id == Id);
         }
     }

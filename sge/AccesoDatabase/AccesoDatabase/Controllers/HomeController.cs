@@ -52,11 +52,11 @@ namespace AccesoDatabase.Controllers
             }
         }
 
-        public ActionResult Delete(int id, List<clsPersona> listadoPersonas)
+        public ActionResult Delete(int id)
         {
             try
             {
-                clsPersona oPersona = DAL.personaPorId.obtenerPersonaId(id, listadoPersonas);
+                clsPersona oPersona = DAL.personaPorId.obtenerPersonaId(id);
                 return View(oPersona);
             } catch (Exception ex)
             {
@@ -66,15 +66,22 @@ namespace AccesoDatabase.Controllers
         }
 
         [HttpPost]
+        public ActionResult Delete() 
+        {
+            return RedirectToAction("borrar");
+            
+        }
+
         public ActionResult borrar(clsPersona persona) 
         {
-            try
-            {
+            try {
+
                 int cantRows = DAL.clsDeletePersona.deletePersonaDAL(persona.Id);
 
                 ViewBag.cantRows = cantRows;
 
                 return View();
+
             }
             catch (Exception ex)
             {
