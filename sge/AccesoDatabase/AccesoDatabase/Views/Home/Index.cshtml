@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Confirmación de Conexión</h1>
+
+    <h2>Estado de la conexión</h2>
+
+    <p>@ViewBag.ConnectionState</p>
+
+    @Html.ActionLink("Mostrar listado", "listadoPersonas")
+</div>
