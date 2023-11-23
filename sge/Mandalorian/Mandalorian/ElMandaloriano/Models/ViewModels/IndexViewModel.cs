@@ -9,6 +9,7 @@ namespace ElMandaloriano.Models.ViewModels
         public clsMision Mision { get; set; }
         public List<clsMision> ListaMisiones { get; set; }
         #endregion
+            
         #region Constructores
         public IndexViewModel() 
         {

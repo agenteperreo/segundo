@@ -4,23 +4,28 @@
 }
 
 <div class="text-center">
-    <h2 class="display-4">NUEVA REPÚBLICA GALÁCTICA</h2>
+
+    <h1 style="margin:20px">LA NUEVA REPUBLICA</h1>
+
     <form method="post">
-        <table align="center">
-            <tr>
-                <th>Misiones de la nueva República</th>
-            </tr>
-            <tr>
-                <td>
-                    @Html.DropDownListFor(m=>m.Mision.Id, new SelectList(Model.ListaMisiones,"Id","NombreMision",Model.Mision))
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Ver Detalles de la Misión" /></td>
-            </tr>
-            <tr>
-                <label>@Model.Mision.Descripcion</label>
-            </tr>
-        </table>
+
+        <h2 >Misiones a elegir</h2>
+
+        <select name="Id" style="width: 40%; padding: 5px; margin: 20px; box-sizing: content-box;">
+            <option value="" disabled selected hidden>Misiones</option>
+            @foreach (var mision in Model.ListaMisiones)
+            {
+                <option value="@mision.Id">@mision.NombreMision</option>
+            }
+        </select>
+                
+        <input type="submit" value="Ver Detalles" />
+
+        <h3>@Model.Mision.NombreMision</h3>
+
+        <p>@Model.Mision.Descripcion</p>
+
+        <p>@Model.Mision.Recompensa</p>
+        
     </form>
 </div>

@@ -6,12 +6,12 @@ namespace ElMandaloriano.Models.DAL
     {
 
         /// <summary>
-        /// Método que devuelve una misión específica de la lista identificada por el Id.
-        /// Precondición: id debe ser mayor que 0
-        /// Postcondiciones: el objeto devuelto puede ser null o una misión rellena si se encuentra.
+        /// Metodo que devuelve una mision en función del id pasado por parametros
+        /// Precondición: El id debe ser mayor que 0
+        /// Postcondiciones: El objeto devuelto puede ser null o una misión rellena si se encuentra.
         /// </summary>
         /// <param name="Id">int</param>
-        /// <returns>devuelve uns clsMision</returns>
+        /// <returns>Devuelve una mision con el id pasado por parametros</returns>
         public static clsMision obtenerMisionId(int Id, List<clsMision> listaMisiones)
         {
             listaMisiones = clsListaMisiones.getListaCompletaMisiones();
