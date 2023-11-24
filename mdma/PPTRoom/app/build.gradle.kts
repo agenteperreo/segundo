@@ -2,14 +2,15 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.kapt")
+
 }
 
 android {
-    namespace = "com.example.piedrapapeltijeras"
+    namespace = "com.example.ppt_room"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.piedrapapeltijeras"
+        applicationId = "com.example.ppt_room"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -52,6 +53,8 @@ android {
 
 dependencies {
 
+
+
     implementation("androidx.navigation:navigation-compose:2.7.5")
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.5")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.5")
@@ -73,5 +76,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
 }
