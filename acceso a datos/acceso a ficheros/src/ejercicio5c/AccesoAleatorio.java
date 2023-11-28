@@ -11,7 +11,7 @@ public class AccesoAleatorio {
 		
 		try {
 			// Creamos el File con el archivo de lectura
-			File lectura = new File("C:\\github\\segundo\\acceso a datos\\acceso a ficheros\\src\\ejercicio5b\\lectura.txt");
+			File lectura = new File("C:\\github\\segundo\\acceso a datos\\acceso a ficheros\\src\\ejercicio5c\\lectura.txt");
 				
 			// Creamos el acceso aleatorio con el archivo y solo modo lectura
 			RandomAccessFile raf1 = new RandomAccessFile(lectura, "r");
@@ -23,7 +23,7 @@ public class AccesoAleatorio {
 			String linea="", aux="";
 			
 			// Creamos el File con el archivo de escritura
-			File escritura = new File("C:\\github\\segundo\\acceso a datos\\acceso a ficheros\\src\\ejercicio5b\\escritura.txt");
+			File escritura = new File("C:\\github\\segundo\\acceso a datos\\acceso a ficheros\\src\\ejercicio5c\\escritura.txt");
 			
 			// Creamos el acceso aleatorio con el archivo de escrtura en modo rw
 			RandomAccessFile raf2 = new RandomAccessFile(escritura, "rw");
@@ -65,9 +65,6 @@ public class AccesoAleatorio {
 		
 		//Escribimos en el fichero.
         try {
-
-        	// Variable que almacenará el caracter de la posicion de i en el bucle
-            String reverse;
             
             char k;
             
@@ -76,17 +73,28 @@ public class AccesoAleatorio {
             
             //Recorremos el aux del reves.
             for (int i=aux.length()-1; i>=0; i--){
-
-            		// Buscamos el caracter en la posicion i
+            	
+            	// Si i es impar y no es 0
+            	if(i%2 != 0 && i != 0) {
+            		// Buscamos el caracter en la posicion i-1
                     k= aux.charAt(i-1);
-                    
-                    reverse += ;
-
-                    //Casteamos a string.
-                    invertido=""+reverse;
+                } else {
+                	// Buscamos el caracter en la posicion i+1
+                	k=aux.charAt(i+1);
+                } 
+            	
+            	// Concatenamos k con la variable invertido
+            	invertido += k; 
               
-                    //Escribimos el reverse en el fichero.
-                    raf2.writeBytes(invertido+"\n");
+            	// Si i es par
+                if(i%2 == 0) {
+                	
+                	// Escribimos la variable invertido con un salto de linea
+                	raf2.writeBytes(invertido+"\n");
+                	
+                	// Reiniciamos la variable
+                	invertido="";
+                }
 
             }
             

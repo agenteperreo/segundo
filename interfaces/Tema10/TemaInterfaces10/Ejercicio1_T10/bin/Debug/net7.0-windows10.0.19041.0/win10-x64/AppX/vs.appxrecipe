@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\github\segundo\interfaces\Tema10\TemaInterfaces10\Ejercicio1_T10\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-23T13:38:53.510</Modified>
+      <Modified>2023-11-24T07:40:14.677</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema10\TemaInterfaces10\Ejercicio1_T10\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio1_T10.dll">
       <PackagePath>Ejercicio1_T10.dll</PackagePath>
-      <Modified>2023-11-23T13:38:52.525</Modified>
+      <Modified>2023-11-24T07:40:13.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema10\TemaInterfaces10\Ejercicio1_T10\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Ejercicio1_T10.exe</PackagePath>
-      <Modified>2023-11-23T13:38:52.532</Modified>
+      <Modified>2023-11-24T07:40:13.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\segundo\interfaces\Tema10\TemaInterfaces10\Ejercicio1_T10\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Ejercicio1_T10.deps.json">
       <PackagePath>Ejercicio1_T10.deps.json</PackagePath>
