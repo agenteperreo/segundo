@@ -3,6 +3,7 @@ using Ejercicio1_T10.Models.Entidades;
 using Ejercicio1_T10.ViewModels.Utilidades;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace Ejercicio1_T10.ViewModels
         #region Atributos
         private DelegateCommand buscarCommand;
         private DelegateCommand eliminarCommand;
-        private List<clsPersona> listadoPersonas;
+        private ObservableCollection<clsPersona> listadoPersonas;
         private clsPersona personaSeleccionada;
         private String textoBusqueda;
         #endregion
@@ -22,7 +23,7 @@ namespace Ejercicio1_T10.ViewModels
         #region Constructores
         public MainPageVM()
         {
-            listadoPersonas = ListaPersonas.listadoCompletoPersonas();
+            listadoPersonas = new ObservableCollection<clsPersona>(ListaPersonas.listadoCompletoPersonas());
             buscarCommand = new DelegateCommand(buscarCommandExecute, buscarCommandCanExecute);
             eliminarCommand = new DelegateCommand(eliminarCommandExecute, eliminarCommandCanExecute);
         }
@@ -41,7 +42,7 @@ namespace Ejercicio1_T10.ViewModels
             get { return eliminarCommand; }
         }
 
-        public List<clsPersona> ListadoPersonas
+        public ObservableCollection<clsPersona> ListadoPersonas
         {
 
             get { return listadoPersonas; }
@@ -50,12 +51,20 @@ namespace Ejercicio1_T10.ViewModels
 
         public clsPersona PersonaSeleccionada
         {
-            set { personaSeleccionada = value; }
+            set { personaSeleccionada = value;
+                NotifyPropertyChanged("PersonaSeleccionada");
+                eliminarCommand.RaiseCanExecuteChanged();
+            }
         }
 
         public String TextoBusqueda
         {
             get { return textoBusqueda; }
+
+            set { textoBusqueda = value;
+                NotifyPropertyChanged("TextoBusqueda");
+                buscarCommand.RaiseCanExecuteChanged();
+            }
         }
         #endregion
 
@@ -82,7 +91,6 @@ namespace Ejercicio1_T10.ViewModels
         private void eliminarCommandExecute()
         {
            listadoPersonas.Remove(personaSeleccionada);
-            NotifyPropertyChanged("ListadoPersonas");
         }
 
         /// <summary>
@@ -106,7 +114,9 @@ namespace Ejercicio1_T10.ViewModels
         /// </summary>
         private void buscarCommandExecute()
         {
-            
+            var listadoFiltrado = listadoPersonas.Where(p => p.Nombre.Contains(textoBusqueda) || p.Apellidos.Contains(textoBusqueda)).ToList();
+            listadoPersonas = new ObservableCollection<clsPersona> (listadoFiltrado);
+            NotifyPropertyChanged("ListadoPersonas");
         }
         #endregion
 

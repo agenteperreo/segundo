@@ -10,9 +10,21 @@
     
     <VerticalStackLayout>
         <ListView ItemsSource="{Binding ListadoPersonas}" SelectedItem="{Binding PersonaSeleccionada}">
-            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <HorizontalStackLayout>
+                            <Label x:Name="lblNombre" Text="{Binding Nombre}"/>
+                            <Label x:Name="lblApellidos" Text="{Binding Apellidos}"/>
+                        </HorizontalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
 
+        <Button Text="Borrar" Command="{Binding EliminarCommand}"/>
+
+        <Entry x:Name="entryBuscar" Text="{Binding TextoBusqueda}"></Entry>
         <Button Text="Buscar" Command="{Binding BuscarCommand}"></Button>
     </VerticalStackLayout>
 

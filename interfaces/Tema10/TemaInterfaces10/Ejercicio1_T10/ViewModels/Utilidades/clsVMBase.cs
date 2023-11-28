@@ -12,7 +12,7 @@ namespace Ejercicio1_T10.ViewModels.Utilidades
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void NotifyPropertyChanged([CallerMemberName]string propertyName = null)
+        public virtual void NotifyPropertyChanged([CallerMemberName]string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

@@ -17,6 +17,11 @@ namespace Ejercicio1_T10.Models.DAL
             listadoPersonas.Add(new clsPersona(1, "Pedro", "Cornejo", "987654321", 1));
             listadoPersonas.Add(new clsPersona(2, "Isa Katha", "Loetzer", "486217935", 2));
             listadoPersonas.Add(new clsPersona(3, "Paco", "Calvo", "159753684", 3));
+            listadoPersonas.Add(new clsPersona(4, "Pedro", "Cornejo", "154879893", 2));
+            listadoPersonas.Add(new clsPersona(5, "Pedro", "Cornejo", "154879893", 2));
+            listadoPersonas.Add(new clsPersona(6, "Pedro", "Cornejo", "154879893", 2));
+            listadoPersonas.Add(new clsPersona(7, "Pedro", "Cornejo", "154879893", 2));
+
 
             return listadoPersonas;
         }
