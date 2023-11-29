@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Introduce tu nombre</h1>
+    
+    <form method="post">@*NO OLVIDAR EL FORMULARIO*@
+        <input type="text" name="nombre"/>
+        <input type="submit" />
+        @Html.ActionLink("Ir a saludo", "Saludo", "Home")
+    </form>
+</div>
