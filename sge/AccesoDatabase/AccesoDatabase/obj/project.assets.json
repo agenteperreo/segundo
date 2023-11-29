@@ -3567,6 +3567,20 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -10507,6 +10521,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "DAL/1.0.0": {
       "type": "project",
       "path": "../DAL/DAL.csproj",
@@ -10520,7 +10539,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "DAL >= 1.0.0",
+      "BL >= 1.0.0",
       "Entidades >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.11"
@@ -10559,8 +10578,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\github\\segundo\\sge\\AccesoDatabase\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\github\\segundo\\sge\\AccesoDatabase\\DAL\\DAL.csproj"
+            "C:\\github\\segundo\\sge\\AccesoDatabase\\BL\\BL.csproj": {
+              "projectPath": "C:\\github\\segundo\\sge\\AccesoDatabase\\BL\\BL.csproj"
             },
             "C:\\github\\segundo\\sge\\AccesoDatabase\\Entidades\\Entidades.csproj": {
               "projectPath": "C:\\github\\segundo\\sge\\AccesoDatabase\\Entidades\\Entidades.csproj"

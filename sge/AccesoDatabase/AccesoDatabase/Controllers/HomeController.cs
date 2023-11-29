@@ -1,4 +1,7 @@
 ﻿using AccesoDatabase.Models;
+using BL;
+using BL.Listados;
+using BL.Manejadoras;
 using Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -39,11 +42,15 @@ namespace AccesoDatabase.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult listadoPersonas()
         {
             try
             {
-                List<clsPersona> listadoCompPersonas = DAL.clsListadoPersonas.listadoCompletoPersonas();
+                List<clsPersona> listadoCompPersonas = clsListaPersonasBL.listadoCompletoPersonasBL();
                 return View(listadoCompPersonas);
             } catch (Exception ex)
             {
@@ -52,12 +59,16 @@ namespace AccesoDatabase.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult Delete(int id)
         {
             try
             {
-                clsPersona oPersona = DAL.personaPorId.obtenerPersonaId(id);
-                return View(oPersona);
+                return View(HandlerPersonaBL.getPersonaId(id));
             } catch (Exception ex)
             {
                 ViewBag.Error = "Ha ocurrido un error";
@@ -65,29 +76,113 @@ namespace AccesoDatabase.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="oPersona"></param>
+        /// <returns></returns>
+        [ActionName("Delete")]
         [HttpPost]
-        public ActionResult Delete() 
+        public IActionResult DeletePost(int id) 
         {
-            return RedirectToAction("borrar");
-            
+            try
+            {
+                int numeroFilas = HandlerPersonaBL.deletePersonaBL(id);
+
+                if(numeroFilas == 0)
+                {
+                    ViewBag.Info = "No existe esa persona";
+                } 
+                else if(numeroFilas == -1)
+                {
+                    ViewBag.Info = "Hoy es miercoles y no se puede borrar";
+                }
+                else
+                {
+                    ViewBag.Info = "La persona se ha borrado correctamente";
+                }
+
+                return View("listadoPersonas", clsListaPersonasBL.listadoCompletoPersonasBL());
+            } catch 
+            {
+                ViewBag.Error = "Ha ocurrido un erro en la base de datos";
+                return View("Error");
+            }            
         }
 
-        public ActionResult borrar(clsPersona persona) 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ActionResult Details(int id)
         {
-            try {
-
-                int cantRows = DAL.clsDeletePersona.deletePersonaDAL(persona.Id);
-
-                ViewBag.cantRows = cantRows;
-
-                return View();
-
+            try
+            {
+                clsPersona oPersona = HandlerPersonaBL.getPersonaId(id);
+                return View(oPersona);
             }
             catch (Exception ex)
             {
                 ViewBag.Error = "Ha ocurrido un error";
                 return View("Error");
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult Details()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ActionResult Edit(int id)
+        {
+            clsPersona oPersona = HandlerPersonaBL.getPersonaId(id);
+            return View(oPersona);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="oPersona"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult Edit(clsPersona oPersona)
+        {
+            DAL.clsEditPersona.editPersona(oPersona);
+
+            return RedirectToAction("listadoPersonas");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="oPersona"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult Create(clsPersona oPersona)
+        {
+            DAL.clsCreatePersona.createPersona(oPersona);
+
+            return RedirectToAction("listadoPersonas");
         }
 
         public IActionResult Privacy()

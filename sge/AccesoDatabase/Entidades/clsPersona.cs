@@ -10,12 +10,13 @@
         public string Direccion {  get; set; }
         public string Foto { get; set; }
         public DateTime FechaNac {  get; set; }
+        public int IDDepartamento { get; set; }
         #endregion
 
         #region Constructores
         public clsPersona() { }
 
-        public clsPersona(int id, string nombre, string apellidos, string telefono, string direccion, string foto, DateTime fechaNac)
+        public clsPersona(int id, string nombre, string apellidos, string telefono, string direccion, string foto, DateTime fechaNac, int idDepartamento)
         {
             Id = id;
             Nombre = nombre;
@@ -24,6 +25,7 @@
             Direccion = direccion;
             Foto = foto;
             FechaNac = fechaNac;
+            IDDepartamento = idDepartamento;
         }
         #endregion
 

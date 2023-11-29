@@ -5,6 +5,7 @@
 }
 
 <h1>Listado de Personas</h1>
+<h3>@ViewBag.Info</h3>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -33,7 +34,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.FechaNac)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.IDDepartamento)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -55,10 +58,13 @@
                 @Html.DisplayFor(modelItem => item.Direccion)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Foto)
+                <img src="@item.Foto"/>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaNac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDDepartamento)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

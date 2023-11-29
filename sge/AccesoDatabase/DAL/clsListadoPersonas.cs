@@ -5,6 +5,10 @@ namespace DAL
 {
     public class clsListadoPersonas
     {
+        /// <summary>
+        /// Funcion para obtener una lista de personas de la base de datos
+        /// </summary>
+        /// <returns>Lista de personas de la vase de datos</returns>
         public static List<clsPersona> listadoCompletoPersonas()
         {
 
@@ -70,6 +74,11 @@ namespace DAL
                         if (miLector["Foto"] != System.DBNull.Value)
                         {
                             oPersona.Foto = (string)miLector["Foto"];
+                        }
+
+                        if (miLector["IDDepartamento"] != System.DBNull.Value)
+                        {
+                            oPersona.IDDepartamento = (int)miLector["IDDepartamento"];
                         }
 
                             listadoPersonas.Add(oPersona);

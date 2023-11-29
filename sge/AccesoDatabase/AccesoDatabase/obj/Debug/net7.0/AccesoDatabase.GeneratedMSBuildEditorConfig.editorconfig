@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\github\segundo\sge\AccesoDatabase\AccesoDatabase
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/borrar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxib3JyYXIuY3NodG1s
+[C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/github/segundo/sge/AccesoDatabase/AccesoDatabase/Views/Home/Index.cshtml]

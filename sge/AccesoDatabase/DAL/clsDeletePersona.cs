@@ -9,6 +9,11 @@ namespace DAL
 {
     public class clsDeletePersona
     {
+        /// <summary>
+        /// Funcion para eliminar una persona de la base de datos
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Cuantas lineas ha afectado</returns>
         public static int deletePersonaDAL(int id)
 
         {

@@ -247,3 +247,5 @@ C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\DAL.dll
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\Entidades.dll
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\DAL.pdb
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\Entidades.pdb
+C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\BL.dll
+C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\BL.pdb
