@@ -28,3 +28,4 @@ C:\github\segundo\sge\FirstApp\Ejercicio4_SGE\obj\Debug\net7.0\refint\Ejercicio4
 C:\github\segundo\sge\FirstApp\Ejercicio4_SGE\obj\Debug\net7.0\Ejercicio4_SGE.pdb
 C:\github\segundo\sge\FirstApp\Ejercicio4_SGE\obj\Debug\net7.0\Ejercicio4_SGE.genruntimeconfig.cache
 C:\github\segundo\sge\FirstApp\Ejercicio4_SGE\obj\Debug\net7.0\ref\Ejercicio4_SGE.dll
+C:\github\segundo\sge\FirstApp\Ejercicio4_SGE\obj\Debug\net7.0\Ejercicio4_SGE.sourcelink.json

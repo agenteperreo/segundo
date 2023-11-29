@@ -28,3 +28,4 @@ C:\github\segundo\sge\Tema7SGE\Tema7SGE\obj\Debug\net7.0\refint\Tema7SGE.dll
 C:\github\segundo\sge\Tema7SGE\Tema7SGE\obj\Debug\net7.0\Tema7SGE.pdb
 C:\github\segundo\sge\Tema7SGE\Tema7SGE\obj\Debug\net7.0\Tema7SGE.genruntimeconfig.cache
 C:\github\segundo\sge\Tema7SGE\Tema7SGE\obj\Debug\net7.0\ref\Tema7SGE.dll
+C:\github\segundo\sge\Tema7SGE\Tema7SGE\obj\Debug\net7.0\Tema7SGE.sourcelink.json

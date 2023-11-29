@@ -1,0 +1,55 @@
+﻿@using Ejercicio12y3.Models.DAL;
+@using Ejercicio12y3.Models.Entidades;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "FormularioPersona";
+    @model Ejercicio12y3.Models.ViewModels.EditarPersonaVM
+}
+
+<form>
+    <label>Nombre: </label>
+    @Html.TextBoxFor(Model => Model.Nombre)
+
+    <br />
+    <br />
+
+    <label>Apellido: </label>
+    @Html.TextBoxFor(Model => Model.Apellidos)
+
+
+    <br />
+    <br />
+
+    <label>Seleccione el departamento: </label>
+    <select name="">
+        <option hidden>Seleccione un departamento...</option>
+        @foreach (clsDepartamen departamento in Model.listadoDepartamentosVM)
+        {
+            if (departamento.Id == Model)
+            {
+                <option selected value="@departamento.Id">@departamento.Nombre</option>
+            }
+            else
+            {
+                <option value="@departamento.Id">@departamento.Nombre</option>
+            }
+        }
+    </select>
+
+
+    <br />
+    <br />
+
+    <button type="submit">Guardar</button>
+</form>
+
+<br />
+
+@Html.ActionLink("Volver al Index", "Index")
+
+<br />
+<br />
+@Html.ActionLink("Volver al listado de personas", "listadoPersonas")
+

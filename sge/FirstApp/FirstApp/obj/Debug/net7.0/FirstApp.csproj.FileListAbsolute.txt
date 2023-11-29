@@ -28,3 +28,4 @@ C:\github\segundo\sge\FirstApp\FirstApp\obj\Debug\net7.0\refint\FirstApp.dll
 C:\github\segundo\sge\FirstApp\FirstApp\obj\Debug\net7.0\FirstApp.pdb
 C:\github\segundo\sge\FirstApp\FirstApp\obj\Debug\net7.0\FirstApp.genruntimeconfig.cache
 C:\github\segundo\sge\FirstApp\FirstApp\obj\Debug\net7.0\ref\FirstApp.dll
+C:\github\segundo\sge\FirstApp\FirstApp\obj\Debug\net7.0\FirstApp.sourcelink.json

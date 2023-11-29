@@ -1,0 +1,9 @@
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.csproj.AssemblyReference.cache
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.AssemblyInfoInputs.cache
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.AssemblyInfo.cs
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.MvcApplicationPartsAssemblyInfo.cache
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.RazorAssemblyInfo.cache
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.RazorAssemblyInfo.cs
+C:\github\segundo\sge\Tema7SGE\Ejercicio1\obj\Debug\net7.0\Ejercicio12y3.sourcelink.json
