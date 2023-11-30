@@ -40,5 +40,10 @@ namespace BL.Manejadoras
         {
             return personaPorId.obtenerPersonaId(id);
         }
+
+        public static void editPersonaBL(clsPersona persona)
+        {
+            clsEditPersona.editPersona(persona);
+        }
     }
 }

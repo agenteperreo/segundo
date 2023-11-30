@@ -1,4 +1,7 @@
-﻿using ExamenSGE.Models;
+﻿using BL.Manejadoras;
+using Entidades;
+using ExamenSGE.Models;
+using ExamenSGE.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,8 +16,32 @@ namespace ExamenSGE.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
+            
+            return View();
+        }
+
+        [ActionName("Index")]
+        [HttpPost]
+        public IActionResult IndexPost()
+        {
+            return View();
+        }
+
+        public ActionResult CambiarPrecio(int id)
+        {
+            clsModelos oModelo = clsHandlerBL.getModeloByIdBL(id);
+
+            return View(oModelo);
+        }
+
+        [ActionName("CambiarPrecio")]
+        [HttpPost]
+        public IActionResult CambiarPrecioPost(clsModelos oModelo)
+        {
+            //clsHandlerBL.editarPrecioModeloBL(oModelo);
+
             return View();
         }
 

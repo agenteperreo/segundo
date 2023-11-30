@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LasPlacas.Views.Pendientes"
              Title="Pendientes"
-             BackgroundColor="#8AEE94">
+             BackgroundColor="White">
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="#8AEE94">
+        <VerticalStackLayout BackgroundColor="White">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>

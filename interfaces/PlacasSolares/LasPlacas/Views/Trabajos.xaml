@@ -5,7 +5,7 @@
             x:Class="LasPlacas.Views.Menu"
             Title="Trabajos"
             BarTextColor="White"
-            BarBackgroundColor="CadetBlue">
+            BarBackgroundColor="#8AEE94">
 
     <local:Pendientes></local:Pendientes>
     <local:Completados></local:Completados>

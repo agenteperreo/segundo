@@ -1,0 +1,85 @@
+Entidades
+	clsMarcas
+		IdMarca
+		Nombre
+	
+	clsModelos
+		IdModelo
+		IdMarca
+		Nombre
+		Precio
+
+DAL
+	clsConexion
+		// Clase que te da opción a crear una conexion con una base de datos
+
+	Listados
+		clsListadoMarcasDAL
+			List<clsMarcas> listadoCompletoMarcasDAL()
+
+		clsListadoModelosDAL
+			List<clsModelos> listadoCompletoModelosDAL()
+
+	Manejadoras
+		clsHandlerDAL
+			List<clsModelos> listadoCompletoModelosPorIdDAL(int id)
+				return List<clsModelos> listadoFiltrado
+
+			void editarPrecioModeloDAL(clsModelo)
+				// Este metodo editará el precio del modelo
+
+			clsModelos getModeloByIdDAL(int id)
+				// Funcion que devuelve un modelo con el id pasado por parametros
+
+			clsMarca getMarcaByIdDAL(int id)
+				// Funcion que devuelve una marca con el id pasado por parametros
+
+BL
+	Listados
+		clsListadoMarcasBL
+			List<clsMarcas> listadoCompletoMarcasBL()
+
+		clsListadoModelosBL
+			List<clsModelos> listadoCompletoModelosBL()
+
+	Manejadoras
+		clsHandler
+			List<clsModelos> listadoCompletoModelosPorIdBL(int id)
+				return List<clsModelos> listadoFiltrado
+
+			void editarPrecioModeloBL(clsModelo)
+				// Este metodo editará el precio del modelo
+
+			clsModelos getModeloByIdBL(int id)
+				// Funcion que devuelve un modelo con el id pasado por parametros
+
+			clsMarca getMarcaByIdBL(int id)
+				// Funcion que devuelve una marca con el id pasado por parametros
+
+UI
+
+	Models
+		ViewsModels
+			clsListadoMarcasConListadoModelosVM()
+				List<clsMarcas> ListadoMarcas
+				List<clsModelos> ListadoModelos
+
+			clsModeloConMarcaVm() : clsModelos
+				string nombreMarca
+				
+			
+	Controllers
+		HomeController
+			Index()
+				return View(clsListadoMarcasConListadoModelosVM)
+
+			CambiarPrecio(int id)
+				return View(clsModelo)
+				
+
+	Views
+		Index
+			// Mostrara una lista de marcas y una lista de de modelos de la marca seleccionada y redirigirá a la otra vista
+		CambiarPrecio
+			// Mostrará el nombre de la marca, el nombre del modelo, un campo para cambiar el precio y un boton para editar el precio
+	

@@ -25,7 +25,7 @@
     <label>Seleccione el departamento: </label>
     <select name="">
         <option hidden>Seleccione un departamento...</option>
-        @foreach (clsDepartamen departamento in Model.listadoDepartamentosVM)
+        @foreach (clsDepartamento departamento in Model.listadoDepartamentosVM)
         {
             if (departamento.Id == Model)
             {

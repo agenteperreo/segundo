@@ -1,4 +1,5 @@
 ﻿using AccesoDatabase.Models;
+using AccesoDatabase.Models.ViewModels;
 using BL;
 using BL.Listados;
 using BL.Manejadoras;
@@ -147,7 +148,9 @@ namespace AccesoDatabase.Controllers
         public ActionResult Edit(int id)
         {
             clsPersona oPersona = HandlerPersonaBL.getPersonaId(id);
-            return View(oPersona);
+            
+            listadoDepartamentoConPersonasVM vm = new listadoDepartamentoConPersonasVM(oPersona);
+            return View(vm);
         }
 
         /// <summary>
@@ -158,7 +161,7 @@ namespace AccesoDatabase.Controllers
         [HttpPost]
         public ActionResult Edit(clsPersona oPersona)
         {
-            DAL.clsEditPersona.editPersona(oPersona);
+            HandlerPersonaBL.editPersonaBL(oPersona);
 
             return RedirectToAction("listadoPersonas");
         }

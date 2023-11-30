@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LasPlacas.Views.Detalles"
              Title="Detalles"
-             BackgroundColor="#8AEE94">
+             BackgroundColor="White">
 
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="#8AEE94">
-            <Border Stroke="#8AEE94" Margin="40" StrokeThickness="1" WidthRequest="700" HeightRequest="850" StrokeShape="RoundRectangle 15, 15, 15, 15"  Grid.Column="0" Grid.Row="0">
+        <VerticalStackLayout BackgroundColor="White">
+            <Border Stroke="White" Margin="40" StrokeThickness="1" WidthRequest="700" HeightRequest="850" StrokeShape="RoundRectangle 15, 15, 15, 15"  Grid.Column="0" Grid.Row="0">
                 <VerticalStackLayout WidthRequest="700" HeightRequest="850" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#8EB7F4">
                     <Label x:Name="lblTitulo" Text="Fallo en el contador" Margin="0, 15, 0, 0" FontSize="36"  FontFamily="Quicksand" WidthRequest="600"/>
                     <Label x:Name="lblLineaDivisoria" Text="_________________________________________________________________________" WidthRequest="600" TextColor="#938383"/>
