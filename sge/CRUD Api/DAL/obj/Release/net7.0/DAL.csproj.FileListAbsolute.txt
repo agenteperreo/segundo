@@ -1,0 +1,31 @@
+C:\github\segundo\sge\AccesoDatabase\DAL\bin\Release\net7.0\DAL.deps.json
+C:\github\segundo\sge\AccesoDatabase\DAL\bin\Release\net7.0\DAL.dll
+C:\github\segundo\sge\AccesoDatabase\DAL\bin\Release\net7.0\DAL.pdb
+C:\github\segundo\sge\AccesoDatabase\DAL\bin\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\AccesoDatabase\DAL\bin\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.csproj.AssemblyReference.cache
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.AssemblyInfoInputs.cache
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.AssemblyInfo.cs
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.csproj.CopyComplete
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.dll
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\refint\DAL.dll
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\DAL.pdb
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Release\net7.0\ref\DAL.dll
+C:\github\segundo\sge\CRUD Api\DAL\bin\Release\net7.0\DAL.deps.json
+C:\github\segundo\sge\CRUD Api\DAL\bin\Release\net7.0\DAL.dll
+C:\github\segundo\sge\CRUD Api\DAL\bin\Release\net7.0\DAL.pdb
+C:\github\segundo\sge\CRUD Api\DAL\bin\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\CRUD Api\DAL\bin\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.csproj.AssemblyReference.cache
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.AssemblyInfoInputs.cache
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.AssemblyInfo.cs
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.sourcelink.json
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.csproj.CopyComplete
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.dll
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\refint\DAL.dll
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\DAL.pdb
+C:\github\segundo\sge\CRUD Api\DAL\obj\Release\net7.0\ref\DAL.dll

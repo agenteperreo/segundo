@@ -1,4 +1,5 @@
 ﻿using BL.Listados;
+using BL.Manejadoras;
 using Entidades;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,9 @@ namespace AccesoDatabase.Controllers.API
 
         // GET api/<DepartamentosController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public int Get(int id)
         {
-            return "value";
+            return HandlerPersonaBL.deletePersonaBL(id);
         }
 
         // POST api/<DepartamentosController>

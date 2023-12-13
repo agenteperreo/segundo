@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUD_Maui.Views.Detalles"
+             Title="Detalles"
+             xmlns:viewModels="clr-namespace:CRUD_Maui.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModels:departamentoPorIdVM/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout>
+        <Label x:Name="lblNombre" Text="{Binding Nombre}"/>
+        <Label x:Name="lblApellidos" Text="{Binding Apellidos}"/>
+        <Label x:Name="lblTelefono" Text="{Binding Telefono}"/>
+        <Label x:Name="lblDireccion" Text="{Binding Direccion}"/>
+        <Label x:Name="lblFoto" Text="{Binding Foto}"/>
+        <Label x:Name="lblFechaNac" Text="{Binding FechaNac}"/>
+        <Label x:Name="lblNombreDep" Text="{Binding NombreDepartamento}"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -249,3 +249,4 @@ C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\DAL.pdb
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\Entidades.pdb
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\BL.dll
 C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\bin\Debug\net7.0\BL.pdb
+C:\github\segundo\sge\AccesoDatabase\AccesoDatabase\obj\Debug\net7.0\AccesoDatabase.sourcelink.json

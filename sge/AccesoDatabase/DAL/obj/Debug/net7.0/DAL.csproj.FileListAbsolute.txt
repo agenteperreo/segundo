@@ -13,3 +13,4 @@ C:\github\segundo\sge\AccesoDatabase\DAL\obj\Debug\net7.0\DAL.dll
 C:\github\segundo\sge\AccesoDatabase\DAL\obj\Debug\net7.0\refint\DAL.dll
 C:\github\segundo\sge\AccesoDatabase\DAL\obj\Debug\net7.0\DAL.pdb
 C:\github\segundo\sge\AccesoDatabase\DAL\obj\Debug\net7.0\ref\DAL.dll
+C:\github\segundo\sge\AccesoDatabase\DAL\obj\Debug\net7.0\DAL.sourcelink.json

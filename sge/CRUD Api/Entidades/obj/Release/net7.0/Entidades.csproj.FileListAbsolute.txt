@@ -1,0 +1,23 @@
+C:\github\segundo\sge\AccesoDatabase\Entidades\bin\Release\net7.0\Entidades.deps.json
+C:\github\segundo\sge\AccesoDatabase\Entidades\bin\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\AccesoDatabase\Entidades\bin\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.AssemblyInfoInputs.cache
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.AssemblyInfo.cs
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\refint\Entidades.dll
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Release\net7.0\ref\Entidades.dll
+C:\github\segundo\sge\CRUD Api\Entidades\bin\Release\net7.0\Entidades.deps.json
+C:\github\segundo\sge\CRUD Api\Entidades\bin\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\CRUD Api\Entidades\bin\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.AssemblyInfoInputs.cache
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.AssemblyInfo.cs
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.csproj.CoreCompileInputs.cache
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.sourcelink.json
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.dll
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\refint\Entidades.dll
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\Entidades.pdb
+C:\github\segundo\sge\CRUD Api\Entidades\obj\Release\net7.0\ref\Entidades.dll

@@ -9,3 +9,4 @@ C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Debug\net7.0\Entidades.dll
 C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Debug\net7.0\refint\Entidades.dll
 C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Debug\net7.0\Entidades.pdb
 C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Debug\net7.0\ref\Entidades.dll
+C:\github\segundo\sge\AccesoDatabase\Entidades\obj\Debug\net7.0\Entidades.sourcelink.json

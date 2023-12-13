@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema11_1", "Tema11_1\Tema11_1.csproj", "{4710EF7A-62F1-4783-B3EE-185507AA23C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{57586228-049D-460C-A78E-533C5AA3A4FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4710EF7A-62F1-4783-B3EE-185507AA23C7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{57586228-049D-460C-A78E-533C5AA3A4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57586228-049D-460C-A78E-533C5AA3A4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57586228-049D-460C-A78E-533C5AA3A4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57586228-049D-460C-A78E-533C5AA3A4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4CDAB1E-270F-4383-909F-1724FD14B850}
+	EndGlobalSection
+EndGlobal

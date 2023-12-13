@@ -1,0 +1,1 @@
+C:\github\segundo\sge\CRUD Api\CRUD Maui\CRUD Maui.csproj;x64

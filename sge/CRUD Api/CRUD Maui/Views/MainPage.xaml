@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUD_Maui.Views.MainPage"
+             xmlns:viewModels="clr-namespace:CRUD_Maui.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModels:listadoPersonasVM/>
+    </ContentPage.BindingContext>
+
+
+    <VerticalStackLayout>
+        <ListView ItemsSource="{Binding ListadoPersonas}" SelectedItem="{Binding PersonaSeleccionada}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <HorizontalStackLayout>
+                            <Label x:Name="lblNombre" Text="{Binding Nombre}"/>
+                        </HorizontalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Detalles" Command="{Binding ElegirCommand}"></Button>
+    </VerticalStackLayout>
+
+</ContentPage>
