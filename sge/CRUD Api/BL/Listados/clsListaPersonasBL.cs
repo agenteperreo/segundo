@@ -1,4 +1,4 @@
-﻿using DAL;
+﻿using DAL.Listados;
 using Entidades;
 
 namespace BL.Listados

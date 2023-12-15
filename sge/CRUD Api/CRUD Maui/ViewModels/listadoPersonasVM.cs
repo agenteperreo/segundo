@@ -1,5 +1,5 @@
 ﻿using CRUD_Maui.ViewModels.Utilidades;
-using DAL;
+using DAL.Listados;
 using Entidades;
 using System;
 using System.Collections.Generic;
