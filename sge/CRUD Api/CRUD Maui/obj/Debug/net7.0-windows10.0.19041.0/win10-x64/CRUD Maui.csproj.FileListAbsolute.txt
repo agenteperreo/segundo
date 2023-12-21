@@ -74,7 +74,6 @@ C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\wi
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.AssemblyInfoInputs.cache
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.AssemblyInfo.cs
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.csproj.CoreCompileInputs.cache
-C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.sourcelink.json
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\refint\CRUD Maui.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\CRUD Maui.pdb
@@ -370,7 +369,6 @@ C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\wi
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1423.51910.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -626,3 +624,4 @@ C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\wi
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\github\segundo\sge\CRUD Api\CRUD Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\github\segundo\sge\CRUD Api\CRUD Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1223.47720.dll

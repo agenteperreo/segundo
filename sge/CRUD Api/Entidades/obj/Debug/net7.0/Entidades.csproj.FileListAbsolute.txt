@@ -17,7 +17,6 @@ C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.GeneratedMSB
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfoInputs.cache
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.AssemblyInfo.cs
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.csproj.CoreCompileInputs.cache
-C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.sourcelink.json
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.dll
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\refint\Entidades.dll
 C:\github\segundo\sge\CRUD Api\Entidades\obj\Debug\net7.0\Entidades.pdb

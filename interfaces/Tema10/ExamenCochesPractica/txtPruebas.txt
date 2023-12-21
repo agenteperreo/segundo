@@ -1,0 +1,52 @@
+Entidades
+	clsMarcas
+	clsModelos
+
+DAL
+	Conexion
+		clsConexion
+	Listados
+		clsListadoMarcas
+			public static List<clsMarcas> listadoCompletoMarcasDAL()
+	
+		clsListadoModelos
+			public static List<clsModelos> listadoModelosFiltradoIdMarcasDAL(int idMarca)
+
+	Manejadoras
+		clsManejadoraModelos
+			public static clsModelo obtenerModeloDAL(int idModelo)
+			public static int actualizarPrecioModeloDAL(clsModelo modelo)
+			int idMarcaSeleccionada
+			
+		clsManejadoraMarcas
+			public static string nombreMarcaPorIdDAL(int idModelo)
+
+BL
+	Listados
+		clsListadoMarcas
+			public static List<clsMarcas> listadoCompletoMarcasBL()
+	
+		clsListadoModelos
+			public static List<clsModelos> listadoModelosFiltradoIdMarcasBL(int idMarca)
+
+	Manejadoras
+		clsManejadoraModelos
+			public static clsModelo obtenerModeloBL(int idModelo)
+			public static int actualizarPrecioModeloBL(clsModelo modelo)
+			
+		clsManejadoraMarcas
+			public static string nombreMarcaPorIdBL(int idModelo)
+
+UI
+	ViewModels
+		clsMarcasYModelosVM
+			List<clsMarcas> ListadoMarcas = listadoCompletoMarcasBL()
+			List<clsModelos> ListadoModelos = listadoModelosFiltradoIdMarcasBL(id)
+
+		clsModeloYNombreMarcaVM : clsModelos
+			String nombreMarca = nombreMarcaPorIdBL(clsModelos.IDMarcas)
+
+	Controllers
+		Homecontroller
+			Index() return View()
+			IndexPost()

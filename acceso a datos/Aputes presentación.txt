@@ -1,1 +1,4 @@
-mostrar algo de codigo en la presentación
+mostrar algo de codigo en la presentación y explicarlo
+mostrar diagrama en la presentacion
+mostrar las tablas de manera grafica
+log in
